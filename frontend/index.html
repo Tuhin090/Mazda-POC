@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazda Portal</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root { height: 100%; }
+      body { font-family: Arial, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <!-- Synchronous: runs before React, before any SF bootstrap script.
+         Clears the Mazda_Prechat_ESD session from storage on every dashboard
+         page load so SDO_Messaging_for_Web always starts fresh. -->
+    <script>
+      (function () {
+        if (window.location.pathname === '/') return;
+        var orgId = '00DHo00000dXCjt';
+        try {
+          [localStorage, sessionStorage].forEach(function (store) {
+            Object.keys(store)
+              .filter(function (k) { return k.startsWith(orgId); })
+              .forEach(function (k) { store.removeItem(k); });
+          });
+        } catch (e) {}
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
