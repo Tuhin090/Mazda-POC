@@ -3,7 +3,7 @@ services:
     name: mazda-poc
     env: node
     buildCommand: npm run build
-    startCommand: npm start
+    startCommand: node backend/seed.js && node backend/server.js
     envVars:
       - key: NODE_ENV
         value: production
