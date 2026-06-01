@@ -2,7 +2,7 @@
   "name": "mazda-poc",
   "version": "1.0.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=18 <22"
   },
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
