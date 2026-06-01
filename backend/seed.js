@@ -10,6 +10,8 @@ const users = [
   { username: "mazda_user",                     password: "Mazda@2026",  role: "user",   first_name: "Mazda",  last_name: "User"    },
   { username: "testuser",                       password: "Test@111",    role: "user",   first_name: "Test",   last_name: "User"    },
   { username: "tuhin.bhunia@cloudkaptan.com",   password: "Tuhin@123",   role: "admin",  first_name: "Tuhin",  last_name: "Bhunia"  },
+  { username: "john.thompson@email.com",        password: "John@123",    role: "admin",   first_name: "John",   last_name: "Thompson" },
+  { username: "alex.thompson@email.com",        password: "Alex@123",    role: "user",    first_name: "Alex",   last_name: "Thompson" },
 ];
 
 const insert = db.prepare(

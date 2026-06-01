@@ -78,14 +78,15 @@ export default function Layout({ children }) {
     window.addEventListener("onEmbeddedMessagingReady", function () {
       try {
         const user = getUserFromToken();
-        window.embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
-          "_firstName": { value: user.first_name || "", isEditableByEndUser: true },
-          "_lastName":  { value: user.last_name  || "", isEditableByEndUser: true },
-          "_email":     { value: user.email || user.username || "", isEditableByEndUser: true },
-          "_subject":   { value: "Support Request", isEditableByEndUser: true },
-        });
+        // window.embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+        //   "_firstName": { value: user.first_name || "", isEditableByEndUser: true },
+        //   "_lastName":  { value: user.last_name  || "", isEditableByEndUser: true },
+        //   "_email":     { value: user.email || user.username || "", isEditableByEndUser: true },
+        //   "_subject":   { value: "Support Request", isEditableByEndUser: true },
+        // });
         window.embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-          EndUserEmail: user.email || user.username || "",
+          UserEmailId: user.email
+          // UserEmailId: "alex.thompson@email.com"
         });
       } catch (err) {
         console.error("Error setting pre-chat fields: ", err);
@@ -102,7 +103,7 @@ export default function Layout({ children }) {
 
   function handleLogout() {
     sessionStorage.removeItem("mazda_auth");
-    window.location.href = "http://127.0.0.1:5173";
+    window.location.href = "http://localhost:5173";
   }
 
   function activeNav() {
@@ -132,6 +133,9 @@ export default function Layout({ children }) {
               </button>
             ))}
           </nav>
+        </div>
+        <div className="layout-nav-center">
+          <span className="layout-nav-ext-badge">External Website (Not in Salesforce)</span>
         </div>
         <div className="layout-nav-right">
           <button className="layout-nav-bell" aria-label="Notifications">

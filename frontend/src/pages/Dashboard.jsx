@@ -10,8 +10,20 @@ const QUICK_ACTION_ROUTES = {
   service: "/service",
 };
 
+function getLoggedInUser() {
+  try {
+    const token = sessionStorage.getItem("mazda_auth");
+    if (!token) return null;
+    return JSON.parse(atob(token.split(".")[1]));
+  } catch {
+    return null;
+  }
+}
+
 export default function Dashboard() {
   const navigate = useNavigate();
+  const loggedInUser = getLoggedInUser();
+  const firstName = loggedInUser?.first_name || loggedInUser?.username || dashboardData.user.name;
 
   return (
     <Layout>
@@ -20,7 +32,7 @@ export default function Dashboard() {
         {/* Welcome row */}
         <div className="db-welcome-row">
           <div>
-            <h1 className="db-welcome-title">WELCOME BACK, {user.name.toUpperCase()}</h1>
+            <h1 className="db-welcome-title">WELCOME BACK, {firstName.toUpperCase()}</h1>
             <p className="db-welcome-sub">Last synced {user.lastSynced} · {user.date}</p>
           </div>
           <div className="db-vehicle-selector">
@@ -55,7 +67,9 @@ export default function Dashboard() {
               <div className="db-spec-row">
                 <div className="db-spec">
                   <span className="db-spec-label">VIN</span>
-                  <span className="db-spec-value">{vehicle.vin}</span>
+                  <span className="db-spec-value">
+                    {vehicle.vin.slice(0, 5) + "*".repeat(vehicle.vin.length - 8) + vehicle.vin.slice(-3)}
+                  </span>
                 </div>
                 <div className="db-spec">
                   <span className="db-spec-label">Odometer</span>

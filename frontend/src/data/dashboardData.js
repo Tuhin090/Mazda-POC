@@ -7,19 +7,24 @@ export const dashboardData = {
   },
 
   vehicle: {
-    selector: "2024 MX-5",
-    name: "2024 MAZDA MX-5",
-    trim: "SOUL RED CRYSTAL · GRAND TOURING AWD",
+    selector: "2026 CX-5",
+    name: "2026 MAZDA CX-5",
+    trim: "2.5 S",
+    // trim: "SOUL RED CRYSTAL · GRAND TOURING AWD",
     connected: true,
     image:
-      "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-rf/04_btv/004_exterior/ext.-360s/club/46v-soul-red/e360-2026-mx5-rf-club-soulred-023.jpg#default?w=1480",
-    vin: "JM3KF****567",
+      "https://di-sitebuilder-assets.dealerinspire.com/Mazda/model-pages/2026/CX-5/gallery/1-xl.jpg",
+    // image:
+    //   "https://www.mazdausa.com/content/dam/musa/image-gallery/cx-5/tech-gallery-01.jpg",
+    // image:
+    //   "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-rf/04_btv/004_exterior/ext.-360s/club/46v-soul-red/e360-2026-mx5-rf-club-soulred-023.jpg#default?w=1480",
+    vin: "JM3KFBCM5R0123456",
     odometer: "3,247 mi",
     warranty: "Active to 2029",
     warrantyActive: true,
     software: "v8.4.2",
     lastTrip: "12.4 mi · today",
-    modelYear: "2024",
+    modelYear: "2026",
   },
 
   vehicleStatus: {
