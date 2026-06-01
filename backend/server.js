@@ -14,15 +14,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET;
 
-const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
-  ? process.env.ALLOWED_ORIGINS.split(",").map((o) => o.trim())
-  : [];
+const APP_URL = process.env.APP_URL || "";
 
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin) return callback(null, true);
     if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return callback(null, true);
-    if (ALLOWED_ORIGINS.some((o) => origin.startsWith(o))) return callback(null, true);
+    if (APP_URL && origin === APP_URL) return callback(null, true);
     callback(new Error("Not allowed by CORS"));
   },
 }));
@@ -121,12 +119,10 @@ app.get("/api/auth/salesforce/callback", (req, res) => {
   res.status(501).json({ message: "Salesforce SSO callback not yet configured." });
 });
 
-// ── SERVE REACT BUILD IN PRODUCTION ──────────────────────────────────────────
+// ── SERVE REACT BUILD (production) ───────────────────────────────────────────
 const distPath = path.join(__dirname, "../frontend/dist");
 app.use(express.static(distPath));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(distPath, "index.html"));
-});
+app.get("*", (_req, res) => res.sendFile(path.join(distPath, "index.html")));
 
 app.listen(PORT, () => {
   console.log(`Mazda POC backend running on http://localhost:${PORT}`);

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: mazda-poc
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20"
+      - key: JWT_SECRET
+        sync: false
+      - key: APP_URL
+        sync: false
+      - key: VITE_DASHBOARD_URL
+        sync: false
+      - key: VITE_LOGIN_URL
+        sync: false
