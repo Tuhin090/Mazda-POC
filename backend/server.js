@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const path = require("path");
 
 // Legacy static user list (kept for fallback — see /api/login below)
 const staticUsers = require("./users");
@@ -13,14 +14,16 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET;
 
+const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",").map((o) => o.trim())
+  : [];
+
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow any localhost/127.0.0.1 port (covers Vite port bumps in dev)
-    if (!origin || /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
+    if (!origin) return callback(null, true);
+    if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return callback(null, true);
+    if (ALLOWED_ORIGINS.some((o) => origin.startsWith(o))) return callback(null, true);
+    callback(new Error("Not allowed by CORS"));
   },
 }));
 app.use(express.json());
@@ -116,6 +119,13 @@ app.get("/api/auth/salesforce", (req, res) => {
 app.get("/api/auth/salesforce/callback", (req, res) => {
   // TODO: Exchange code for SF access token, verify identity, issue app JWT
   res.status(501).json({ message: "Salesforce SSO callback not yet configured." });
+});
+
+// ── SERVE REACT BUILD IN PRODUCTION ──────────────────────────────────────────
+const distPath = path.join(__dirname, "../frontend/dist");
+app.use(express.static(distPath));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(distPath, "index.html"));
 });
 
 app.listen(PORT, () => {

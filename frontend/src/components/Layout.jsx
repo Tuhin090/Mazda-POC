@@ -103,7 +103,7 @@ export default function Layout({ children }) {
 
   function handleLogout() {
     sessionStorage.removeItem("mazda_auth");
-    window.location.href = "http://localhost:5173";
+    window.location.href = import.meta.env.VITE_LOGIN_URL || window.location.origin;
   }
 
   function activeNav() {

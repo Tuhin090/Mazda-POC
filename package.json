@@ -1,8 +1,14 @@
 {
   "name": "mazda-poc",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "start:backend": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && node server.js",
+    "install-deps": "cd backend && npm install",
+    "start:backend": "cd backend && node server.js",
     "start:frontend": "cd frontend && npm run dev",
     "dev": "npm run start:backend & npm run start:frontend"
   }

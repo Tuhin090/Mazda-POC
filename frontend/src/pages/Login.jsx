@@ -97,7 +97,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -119,7 +119,8 @@ export default function Login() {
           }
         } catch (e) { void e; }
 
-        window.location.href = `http://localhost:5173/auth?t=${encodeURIComponent(data.token)}`;
+        const dashboardUrl = import.meta.env.VITE_DASHBOARD_URL || window.location.origin;
+        window.location.href = `${dashboardUrl}/auth?t=${encodeURIComponent(data.token)}`;
       } else {
         setError(data.message || "Invalid username or password.");
       }
@@ -132,7 +133,7 @@ export default function Login() {
 
   function handleSalesforceLogin() {
     // Placeholder — will call /api/auth/salesforce to start OAuth flow
-    window.location.href = "http://localhost:5000/api/auth/salesforce";
+    window.location.href = "/api/auth/salesforce";
   }
 
   return (
