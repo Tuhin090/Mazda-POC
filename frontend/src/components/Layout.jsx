@@ -85,8 +85,8 @@ export default function Layout({ children }) {
         //   "_subject":   { value: "Support Request", isEditableByEndUser: true },
         // });
         window.embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-          UserEmailId: user.email
-          // UserEmailId: "alex.thompson@email.com"
+          // UserEmailId: user.email
+          UserEmailId: "john.thompson@email.com"
         });
       } catch (err) {
         console.error("Error setting pre-chat fields: ", err);
