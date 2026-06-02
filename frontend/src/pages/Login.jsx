@@ -138,7 +138,7 @@ export default function Login() {
 
   return (
     <div className="login-root">
-      <div className="login-ext-badge">External Website (Not in Salesforce)</div>
+      <div className="login-ext-badge">External Website (Outside Salesforce)</div>
       {/* Left panel */}
       <div className="login-hero">
         <div className="hero-overlay" />
