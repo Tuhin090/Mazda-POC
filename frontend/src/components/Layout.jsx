@@ -135,7 +135,7 @@ export default function Layout({ children }) {
           </nav>
         </div>
         <div className="layout-nav-center">
-          <span className="layout-nav-ext-badge">External Website (Not in Salesforce)</span>
+          <span className="layout-nav-ext-badge">External Website (Outside Salesforce)</span>
         </div>
         <div className="layout-nav-right">
           <button className="layout-nav-bell" aria-label="Notifications">
