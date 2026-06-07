@@ -62,7 +62,7 @@ export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loadingPhase, setLoadingPhase] = useState(null); // null | "auth" | "data"
   useEffect(() => {
     const SCRIPT_ID = "agentforce-login-bootstrap";
     if (document.getElementById(SCRIPT_ID)) return;
@@ -94,7 +94,7 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
-    setLoading(true);
+    setLoadingPhase("auth");
 
     try {
       const res = await fetch("/api/auth/login", {
@@ -106,9 +106,21 @@ export default function Login() {
       const data = await res.json();
 
       if (data.success) {
-        // End the Mazda_Prechat_ESD session server-side before navigating.
-        // This clears Salesforce's own iframe/third-party storage which persists
-        // across origins and cannot be cleared from the host page directly.
+        setLoadingPhase("data");
+
+        // Pre-fetch SF data so dashboard renders instantly with no flash
+        try {
+          const sfRes = await fetch("/api/sf/customer360", {
+            headers: { Authorization: `Bearer ${data.token}` },
+          });
+          const sfData = await sfRes.json();
+          if (!sfData.error) {
+            sessionStorage.setItem("mazda_sf_data", JSON.stringify(sfData));
+            sessionStorage.setItem("mazda_login_time", Date.now().toString());
+          }
+        } catch { /* non-fatal — dashboard will fetch on its own */ }
+
+        // Clear Agentforce session before navigating
         try {
           const clearFn = window.embeddedservice_bootstrap?.userVerificationAPI?.clearSession;
           if (typeof clearFn === "function") {
@@ -123,11 +135,11 @@ export default function Login() {
         window.location.href = `${dashboardUrl}/auth?t=${encodeURIComponent(data.token)}`;
       } else {
         setError(data.message || "Invalid username or password.");
+        setLoadingPhase(null);
       }
     } catch {
       setError("Unable to connect to server. Please try again.");
-    } finally {
-      setLoading(false);
+      setLoadingPhase(null);
     }
   }
 
@@ -138,6 +150,18 @@ export default function Login() {
 
   return (
     <div className="login-root">
+
+      {/* Full-screen loading overlay — shown while fetching SF data */}
+      {loadingPhase === "data" && (
+        <div className="login-data-overlay">
+          <div className="login-data-overlay-inner">
+            <img src="https://portal.mazdausa.com/pics/images/mazda_logo.png" alt="Mazda" className="mazda-m-logo" />
+            <div className="login-overlay-spinner" />
+            <p className="login-overlay-text">Loading your vehicle data...</p>
+          </div>
+        </div>
+      )}
+
       <div className="login-ext-badge">External Website (Outside Salesforce)</div>
       {/* Left panel */}
       <div className="login-hero">
@@ -219,8 +243,8 @@ export default function Login() {
             </div>
 
             <div className="login-btn-row">
-              <button type="submit" className="login-btn" disabled={loading}>
-                {loading ? "SIGNING IN..." : "LOGIN"}
+              <button type="submit" className="login-btn" disabled={!!loadingPhase}>
+                {loadingPhase === "auth" ? "SIGNING IN..." : "LOGIN"}
               </button>
             </div>
           </form>

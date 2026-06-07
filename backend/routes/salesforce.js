@@ -150,6 +150,66 @@ router.get("/query", async (req, res) => {
   }
 });
 
+// ── Mazda Customer 360 (mirrors MazdaCustomer360Controller Apex logic) ────────
+// GET /api/sf/customer360
+// Uses the logged-in user's email (from JWT) to traverse the DMO chain:
+//   mazdaCustomerDMO__dlm → mazdaOwnershipDMO__dlm → mazdaVehicleDMO__dlm
+router.get("/customer360", async (req, res) => {
+  const email = req.user?.email || req.query.email;
+  if (!email) {
+    return res.status(400).json({ error: "No email available. Ensure user is logged in." });
+  }
+
+  try {
+    // Step 1: Customer by email
+    const customerResult = await sfQuery(
+      `SELECT Id, Name__c, Email__c, Phone__c, Address__c,
+              CustomerId__c, KQ_CustomerId__c, joining_date__c,
+              DataSource__c, DataSourceObject__c, InternalOrganization__c
+       FROM mazdaCustomerDMO__dlm
+       WHERE Email__c = '${email.replace(/'/g, "\\'")}'
+       LIMIT 1`
+    );
+
+    if (!customerResult.records?.length) {
+      return res.status(404).json({ error: `No Data Cloud record found for email: ${email}` });
+    }
+
+    const customer = customerResult.records[0];
+
+    // Step 2: Ownership by CustomerId__c
+    const ownershipResult = await sfQuery(
+      `SELECT Id, CustomerId__c, VehicleId__c, RegistrationId__c,
+              KQ_RegistrationId__c, PurchasedDate__c, PurchasePrice__c,
+              SubscriptionStatus__c, TrialEndDate__c,
+              DataSource__c, DataSourceObject__c, InternalOrganization__c
+       FROM mazdaOwnershipDMO__dlm
+       WHERE CustomerId__c = ${Number(customer.CustomerId__c)}
+       LIMIT 1`
+    );
+
+    const ownership = ownershipResult.records?.[0] || null;
+
+    // Step 3: Vehicle by VehicleId__c
+    let vehicle = null;
+    if (ownership?.VehicleId__c) {
+      const vehicleResult = await sfQuery(
+        `SELECT Id, VehicleName__c, VIN__c, Price__c, Description__c,
+                VehicleId__c, KQ_VehicleId__c, IsActive__c,
+                DataSource__c, DataSourceObject__c, InternalOrganization__c
+         FROM mazdaVehicleDMO__dlm
+         WHERE VehicleId__c = ${Number(ownership.VehicleId__c)}
+         LIMIT 1`
+      );
+      vehicle = vehicleResult.records?.[0] || null;
+    }
+
+    res.json({ customer, ownership, vehicle });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // ── List all custom objects in the org ────────────────────────────────────────
 // GET /api/sf/objects
 // Useful for discovering what custom objects exist (e.g. Vehicle__c, Subscription__c)

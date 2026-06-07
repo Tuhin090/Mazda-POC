@@ -44,7 +44,7 @@ export const dashboardData = {
   },
 
   upcomingService: {
-    month: "JUN",
+    month: "SEP",
     day: 18,
     title: "Oil & filter change",
     time: "9:30 AM · 45 min est.",
