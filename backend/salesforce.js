@@ -1,5 +1,4 @@
-// Salesforce OAuth 2.0 Username-Password flow + REST API helpers
-// Token is cached in memory and auto-refreshed before expiry
+const fetch = require("node-fetch");
 
 let _cache = null; // { accessToken, instanceUrl, expiresAt }
 
@@ -8,26 +7,16 @@ async function getAccessToken() {
     return _cache;
   }
 
-  const {
-    SF_LOGIN_URL,
-    SF_CLIENT_ID,
-    SF_CLIENT_SECRET,
-    SF_USERNAME,
-    SF_PASSWORD,
-    SF_SECURITY_TOKEN,
-  } = process.env;
+  const { SF_LOGIN_URL, SF_CLIENT_ID, SF_CLIENT_SECRET } = process.env;
 
   if (!SF_CLIENT_ID || SF_CLIENT_ID === "your_connected_app_consumer_key") {
     throw new Error("Salesforce credentials not configured in .env");
   }
 
   const body = new URLSearchParams({
-    grant_type: "password",
+    grant_type: "client_credentials",
     client_id: SF_CLIENT_ID,
     client_secret: SF_CLIENT_SECRET,
-    username: SF_USERNAME,
-    // Salesforce requires password+security_token when calling from an untrusted IP
-    password: SF_PASSWORD + (SF_SECURITY_TOKEN || ""),
   });
 
   const res = await fetch(`${SF_LOGIN_URL}/services/oauth2/token`, {
