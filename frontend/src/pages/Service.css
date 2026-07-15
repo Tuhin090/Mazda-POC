@@ -1,0 +1,15 @@
+/* SERVICE page — FAQ content inside the portal shell.
+   Section styling comes from Faq.css; this only tunes the wrapper for the
+   authenticated portal context (font + spacing under the portal header). */
+.faq-portal {
+  font-family: "Mazda Type", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  padding-top: 8px;
+}
+
+/* The search band spans full width on the public page; inside the portal body it
+   should read as a section rather than a full-bleed hero. */
+.faq-portal .faq-search-band {
+  border-top: 1px solid var(--mz-line);
+}

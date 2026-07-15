@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 
 const ORG_ID = "00DHo00000dXCjt";
-const SF_SESSION_KEY = `${ORG_ID}_WEB_STORAGE`;
 
 export default function AgentforceWidget({ scriptId, deploymentName, siteUrl, scrt2Url, onReady }) {
   useEffect(() => {
+    // Guard against double-boot: the Salesforce MIAW library sets this global
+    // once loaded and cannot be cleanly re-initialized (e.g. React StrictMode
+    // remount in dev). Same guard Login.jsx uses for its inline embed.
     if (document.getElementById(scriptId)) return;
+    if (window.embeddedservice_bootstrap) return;
 
     window.initEmbeddedMessaging = function () {
       try {
@@ -28,12 +31,11 @@ export default function AgentforceWidget({ scriptId, deploymentName, siteUrl, sc
     script.onload = () => window.initEmbeddedMessaging();
     document.body.appendChild(script);
 
+    // NOTE: intentionally no destructive teardown of the SF bootstrap here.
+    // Tearing the script/global down and re-appending it (StrictMode remount)
+    // triggers "initialize bootstrap multiple times" errors. Session cleanup for
+    // the unauthorized agent is handled centrally in index.html on route change.
     return () => {
-      document.getElementById(scriptId)?.remove();
-      delete window.embeddedservice_bootstrap;
-      delete window.initEmbeddedMessaging;
-      localStorage.removeItem(SF_SESSION_KEY);
-      sessionStorage.removeItem(SF_SESSION_KEY);
       if (onReady) window.removeEventListener("onEmbeddedMessagingReady", onReady);
     };
   }, []);
