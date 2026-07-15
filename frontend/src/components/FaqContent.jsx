@@ -95,12 +95,14 @@ export default function FaqContent() {
           </h1>
           <form className="faq-search-form" onSubmit={(e) => e.preventDefault()}>
             <input type="text" placeholder="Search FAQs" aria-label="Search FAQs" />
-            <button type="submit" className="faq-search-submit">
-              Search
-            </button>
-            <button type="button" className="faq-search-clear" disabled>
-              Clear
-            </button>
+            <div className="faq-search-actions">
+              <button type="submit" className="faq-search-submit">
+                Search
+              </button>
+              <button type="button" className="faq-search-clear" disabled>
+                Clear
+              </button>
+            </div>
           </form>
         </div>
       </section>
@@ -143,7 +145,7 @@ export default function FaqContent() {
             <div className="faq-cc-body">
               <p>Monday - Friday: 5:00 a.m. - 6:00 p.m. PST</p>
               <p>Saturday: 7:00 a.m. - 3:00 p.m. PST</p>
-              <a className="faq-tel" href="tel:+18002225500">Call (800) 222-5500</a>
+              <a className="faq-tel" href="tel:+18002225500">(800) 222-5500</a>
               <p className="faq-bestfor">BEST FOR:</p>
               <ul>
                 <li>Time-sensitive Vehicle Related Assistance</li>
@@ -219,7 +221,7 @@ export default function FaqContent() {
             </div>
             <div className="faq-cc-body">
               <p>Roadside Available 24 hours a day, 7 days a week anywhere in the United States and Canada.</p>
-              <a className="faq-tel" href="tel:+18008661998">Call (800) 866-1998</a>
+              <a className="faq-tel" href="tel:+18008661998">(800) 866-1998</a>
             </div>
           </article>
 
