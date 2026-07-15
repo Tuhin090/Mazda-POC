@@ -11,6 +11,7 @@ import imgTech from "../assets/faq/technology-software.jpg";
 import imgConnected from "../assets/faq/connected-services.jpg";
 import imgSales from "../assets/faq/sales-financing.jpg";
 import imgEmissions from "../assets/faq/emissions.jpg";
+import holidayFooterImage from "../assets/faq/Holiday-Footer-Image.jpeg";
 
 const FAQ_BASE = "https://faq.mazdausa.com";
 
@@ -243,7 +244,7 @@ export default function FaqContent() {
 
       {/* ---------- Holiday schedule ---------- */}
       <section className="faq-holiday">
-        <div className="faq-holiday-img" style={{ backgroundImage: `url(${imgCx5})` }} />
+        <div className="faq-holiday-img" style={{ backgroundImage: `url(${holidayFooterImage})` }} />
         <div className="faq-holiday-body">
           <h2>Customer Experience Center Holiday Schedule</h2>
           <ul>

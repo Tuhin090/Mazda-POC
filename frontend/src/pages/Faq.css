@@ -15,7 +15,7 @@
   --mz-bg: #ffffff;
   --mz-card-shadow: 5px 5px 0 0 rgba(128, 128, 128, 0.07);
   --mz-font: "Mazda Type", Helvetica, Arial, sans-serif;
-  --mz-maxw: 1440px;
+  --mz-maxw: 1920px;
 }
 
 .faq-page {
@@ -65,6 +65,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.18s ease, color 0.18s ease;
+  border-radius: 20px;
 }
 .faq-login-btn:hover {
   background: #fff;
@@ -85,8 +86,8 @@
   text-align: left;
   background: #fff;
   border: 1px solid var(--mz-line);
-  border-radius: 4px;
-  box-shadow: var(--mz-card-shadow);
+  border-radius: 0;
+  box-shadow: none;
   padding: 24px 28px 28px;
 }
 .faq-search-eyebrow {
@@ -125,15 +126,17 @@
 .faq-search-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 14px;
 }
 .faq-search-form input {
   width: 100%;
+  max-width: 1212px;
   height: 32px;
   padding: 0 12px;
   border: 1px solid var(--mz-line-strong);
   border-radius: 4px;
-  font-family: var(--mz-font);
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   letter-spacing: 3.2px;
   color: var(--mz-gray);
@@ -192,7 +195,7 @@
   height: 40px;
   line-height: 40px;
   padding: 0 18px;
-  font-family: var(--mz-font);
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 3.2px;
@@ -209,26 +212,38 @@
 
 .faq-grid {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 44px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px 0;
+}
+.faq-grid > li {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  display: flex;
 }
 .faq-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   text-decoration: none;
   color: inherit;
 }
 .faq-card-img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
+  width: 304px;
+  max-width: 100%;
+  aspect-ratio: 304 / 288;
   background-size: cover;
   background-position: center;
   background-color: #eee;
   display: block;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s ease;
 }
 .faq-card-title {
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
@@ -236,16 +251,21 @@
   text-transform: uppercase;
   color: #000;
   line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 0.15s ease;
 }
-.faq-card:hover .faq-card-title {
-  color: var(--mz-orange);
+.faq-grid > li:hover{
+  border: solid var(--mz-blue);
+}
+.faq-card-title:hover {
+  color: grey;
 }
 
 /* ---------- Contact section ---------- */
 .faq-contact {
   border-top: 1px solid var(--mz-line);
   padding: 48px 16px 56px;
-  max-width: var(--mz-maxw);
+  max-width: 1760px;
   margin: 0 auto;
 }
 .faq-contact-heading {
@@ -268,7 +288,7 @@
 .faq-contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  gap: 24px;
 }
 .faq-contact-card {
   border: 1px solid var(--mz-line);
@@ -311,6 +331,7 @@
   line-height: 1.65;
   color: #444;
   text-align: center;
+  text-transform: capitalize;
 }
 .faq-cc-body p { margin-bottom: 8px; }
 .faq-tel {
@@ -355,11 +376,13 @@
   align-items: stretch;
   max-width: var(--mz-maxw);
   margin: 0 auto 60px;
-  padding: 0 16px;
+  /*padding: 0 16px;*/
   gap: 40px;
 }
 .faq-holiday-img {
   min-height: 360px;
+  max-width: 825px;
+  height: 620px;
   background-size: cover;
   background-position: center;
   background-color: #ddd;
@@ -380,9 +403,12 @@
   list-style: none;
 }
 .faq-holiday-body li {
-  font-size: 13px;
-  line-height: 1.9;
+  font-size: 14px;
+  line-height: 1.6;
   color: #333;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 .faq-holiday-body li strong {
   color: #000;
@@ -468,14 +494,14 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .faq-grid { grid-template-columns: repeat(2, 1fr); }
+  .faq-grid > li { flex: 0 0 50%; max-width: 50%; }
   .faq-contact-grid { grid-template-columns: repeat(2, 1fr); }
   .faq-holiday { grid-template-columns: 1fr; }
   .faq-holiday-img { min-height: 240px; }
   .faq-footer-cols { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
-  .faq-grid { grid-template-columns: 1fr; }
+  .faq-grid > li { flex: 0 0 100%; max-width: 100%; }
   .faq-contact-grid { grid-template-columns: 1fr; }
   .faq-footer-cols { grid-template-columns: 1fr; }
 }
