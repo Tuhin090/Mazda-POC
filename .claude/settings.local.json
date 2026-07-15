@@ -46,7 +46,8 @@
       "WebFetch(domain:resources.docs.salesforce.com)",
       "WebFetch(domain:www.infallibletechie.com)",
       "WebFetch(domain:trailhead.salesforce.com)",
-      "WebFetch(domain:help.salesforce.com)"
+      "WebFetch(domain:help.salesforce.com)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__evaluate_script"
     ]
   }
 }

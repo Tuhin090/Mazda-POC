@@ -557,3 +557,52 @@
   .db-welcome-row { flex-direction: column; }
   .db-nav-links { display: none; }
 }
+
+/* ── Syncing / skeleton loading state (SF data fetch) ───────────────────────── */
+.db-syncing {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #b02a2a;
+}
+.db-sync-spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #e3b7b7;
+  border-top-color: #b02a2a;
+  border-radius: 50%;
+  animation: db-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes db-spin {
+  to { transform: rotate(360deg); }
+}
+
+.db-skel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 14px;
+  border-radius: 4px;
+  background: #ececec;
+  background-image: linear-gradient(90deg, #ececec 0%, #f6f6f6 50%, #ececec 100%);
+  background-size: 200% 100%;
+  animation: db-shimmer 1.2s ease-in-out infinite;
+}
+.db-skel--dark {
+  background: rgba(255, 255, 255, 0.18);
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.32) 50%, rgba(255,255,255,0.14) 100%);
+  background-size: 200% 100%;
+}
+@keyframes db-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Subscription progress bar while loading — full-width shimmer instead of a fill */
+.db-sub-progress-fill--loading {
+  width: 100%;
+  background: #ececec;
+  background-image: linear-gradient(90deg, #ececec 0%, #f6f6f6 50%, #ececec 100%);
+  background-size: 200% 100%;
+  animation: db-shimmer 1.2s ease-in-out infinite;
+}

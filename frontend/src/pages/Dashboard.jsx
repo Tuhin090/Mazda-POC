@@ -66,6 +66,11 @@ function vehicleSelector(name) {
   return parts.length >= 3 ? `${parts[0]} ${parts.slice(2).join(" ")}` : name;
 }
 
+// Shimmer placeholder shown while Salesforce data is (re)loading.
+function Skel({ w, h = 14, dark = false }) {
+  return <span className={`db-skel${dark ? " db-skel--dark" : ""}`} style={{ width: w, height: h }} />;
+}
+
 export default function Dashboard() {
   const navigate = useNavigate();
   const loggedInUser = getLoggedInUser();
@@ -127,13 +132,17 @@ export default function Dashboard() {
         <div className="db-welcome-row">
           <div>
             <h1 className="db-welcome-title">WELCOME BACK, {firstName.toUpperCase()}</h1>
-            <p className="db-welcome-sub">Last synced {loginTime} · {loginDate}</p>
+            {sfLoading ? (
+              <p className="db-welcome-sub db-syncing"><span className="db-sync-spinner" />Syncing…</p>
+            ) : (
+              <p className="db-welcome-sub">Last synced {loginTime} · {loginDate}</p>
+            )}
           </div>
           <div className="db-vehicle-selector">
             <span className="db-selector-label">VEHICLE</span>
             <button className="db-selector-btn">
               <CarIcon />
-              {sfLoading ? "—" : vehicleSelector(sfVehicle?.VehicleName__c)}
+              {sfLoading ? <Skel w={70} /> : vehicleSelector(sfVehicle?.VehicleName__c)}
               <ChevronIcon />
             </button>
           </div>
@@ -147,12 +156,16 @@ export default function Dashboard() {
             <div className="db-vehicle-hero">
               <div className="db-vehicle-hero-meta">
                 <span className="db-vehicle-trim">{staticVehicle.trim}</span>
-                <span className={`db-connected-badge${vehicleConnected ? " connected" : ""}`}>
-                  <span className="db-connected-dot" />
-                  {vehicleConnected ? "Connected" : "Disconnected"}
-                </span>
+                {sfLoading ? (
+                  <Skel w={92} h={20} dark />
+                ) : (
+                  <span className={`db-connected-badge${vehicleConnected ? " connected" : ""}`}>
+                    <span className="db-connected-dot" />
+                    {vehicleConnected ? "Connected" : "Disconnected"}
+                  </span>
+                )}
               </div>
-              <h2 className="db-vehicle-name">{vehicleName}</h2>
+              <h2 className="db-vehicle-name">{sfLoading ? <Skel w={210} h={26} dark /> : vehicleName}</h2>
               <div className="db-vehicle-img-wrap">
                 <img src={staticVehicle.image} alt={vehicleName} className="db-vehicle-img" />
               </div>
@@ -161,7 +174,7 @@ export default function Dashboard() {
               <div className="db-spec-row">
                 <div className="db-spec">
                   <span className="db-spec-label">VIN</span>
-                  <span className="db-spec-value">{maskVin(vehicleVin)}</span>
+                  <span className="db-spec-value">{sfLoading ? <Skel w={120} /> : maskVin(vehicleVin)}</span>
                 </div>
                 <div className="db-spec">
                   <span className="db-spec-label">Odometer</span>
@@ -185,7 +198,7 @@ export default function Dashboard() {
                 </div>
                 <div className="db-spec">
                   <span className="db-spec-label">Model year</span>
-                  <span className="db-spec-value">{vehicleModelYear}</span>
+                  <span className="db-spec-value">{sfLoading ? <Skel w={48} /> : vehicleModelYear}</span>
                 </div>
               </div>
             </div>
@@ -268,19 +281,21 @@ export default function Dashboard() {
             <div>
               <div className="db-sub-header-row">
                 <h3 className="db-sub-title">SUBSCRIPTION STATUS</h3>
-                <span className="db-sub-badge">{subStatus}</span>
+                {sfLoading ? <Skel w={64} h={18} /> : <span className="db-sub-badge">{subStatus}</span>}
               </div>
               <p className="db-sub-ends">
-                Trial ends <strong>{subEndDateFormatted}</strong>
+                Trial ends <strong>{sfLoading ? <Skel w={110} /> : subEndDateFormatted}</strong>
               </p>
             </div>
-            <span className="db-sub-days">{subDaysRemaining} days remaining</span>
+            {sfLoading ? <Skel w={110} /> : <span className="db-sub-days">{subDaysRemaining} days remaining</span>}
           </div>
           <div className="db-sub-progress-bar">
-            <div className="db-sub-progress-fill" style={{ width: `${subPercentUsed}%` }} />
+            {sfLoading
+              ? <div className="db-sub-progress-fill db-sub-progress-fill--loading" />
+              : <div className="db-sub-progress-fill" style={{ width: `${subPercentUsed}%` }} />}
           </div>
           <div className="db-sub-bottom">
-            <span className="db-sub-pct">{subPercentUsed}% of trial used</span>
+            {sfLoading ? <Skel w={100} /> : <span className="db-sub-pct">{subPercentUsed}% of trial used</span>}
             <button className="db-upgrade-btn" onClick={() => navigate("/connected-services")}>View Plans →</button>
           </div>
         </div>
