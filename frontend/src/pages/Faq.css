@@ -188,6 +188,12 @@
   border-bottom: 1px solid var(--mz-line-strong);
   margin: 26px 0 40px;
 }
+
+.faq-tab:hover{
+  border-bottom-width: 2px;
+  border-bottom-color: #000;
+}
+
 .faq-tab {
   background: none;
   border: none;
@@ -203,10 +209,12 @@
   color: rgba(0, 0, 0, 0.66);
   cursor: pointer;
   margin-bottom: -1px;
+  margin-right: 10px;
 }
 .faq-tab.is-active {
   color: #000;
   font-weight: 700;
+  border-bottom-width: 3px;
   border-bottom-color: #000;
 }
 
@@ -296,6 +304,8 @@
   background: #fff;
   box-shadow: var(--mz-card-shadow);
   padding: 0 0 22px;
+  width: 29vw; 
+  min-height: 340px;
 }
 .faq-cc-head {
   display: flex;
