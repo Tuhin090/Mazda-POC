@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../pages/Faq.css";
 
 import imgCx5 from "../assets/faq/2026-cx5.jpg";
@@ -74,39 +75,52 @@ const MapPinIcon = () => (
 );
 
 /**
+ * Search card shown at the top of every FAQ page (landing, topic, article).
+ * Placeholder only — submit is a no-op, mirroring the disabled search scope
+ * of the POC.
+ */
+export function FaqSearchCard() {
+  return (
+    <section className="faq-search-band">
+      <div className="faq-search-inner">
+        <div className="faq-search-eyebrow">
+          <span className="faq-search-icon" aria-hidden="true">
+            <SearchIcon />
+          </span>
+          <h2>Search FAQs</h2>
+        </div>
+        <h1 className="faq-search-title">
+          Find your answer quickly using our Frequently Asked Questions.
+        </h1>
+        <form className="faq-search-form" onSubmit={(e) => e.preventDefault()}>
+          <input type="text" placeholder="Search FAQs" aria-label="Search FAQs" />
+          <div className="faq-search-actions">
+            <button type="submit" className="faq-search-submit">
+              Search
+            </button>
+            <button type="button" className="faq-search-clear" disabled>
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+}
+
+/**
  * Shared FAQ page body (search band, tabs, featured grid, contact cards, holiday
  * schedule). Rendered both on the public landing (Faq.jsx, with the public navbar +
  * footer + unauthorized chat) and inside the logged-in portal (Service.jsx, wrapped
  * in Layout). Returns a fragment — the wrapper element is the caller's responsibility.
+ *
+ * `internalConnectedServices`: when true (public landing), the Connected Services
+ * card navigates to the internal topic page instead of the external FAQ site.
  */
-export default function FaqContent() {
+export default function FaqContent({ internalConnectedServices = false }) {
   return (
     <>
-      {/* ---------- Search band ---------- */}
-      <section className="faq-search-band">
-        <div className="faq-search-inner">
-          <div className="faq-search-eyebrow">
-            <span className="faq-search-icon" aria-hidden="true">
-              <SearchIcon />
-            </span>
-            <h2>Search FAQs</h2>
-          </div>
-          <h1 className="faq-search-title">
-            Find your answer quickly using our Frequently Asked Questions.
-          </h1>
-          <form className="faq-search-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Search FAQs" aria-label="Search FAQs" />
-            <div className="faq-search-actions">
-              <button type="submit" className="faq-search-submit">
-                Search
-              </button>
-              <button type="button" className="faq-search-clear" disabled>
-                Clear
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
+      <FaqSearchCard />
 
       {/* ---------- Tabs ---------- */}
       <section className="faq-topics">
@@ -120,15 +134,35 @@ export default function FaqContent() {
         <ul className="faq-grid">
           {FEATURED_TOPICS.map((t) => (
             <li key={t.title}>
-              <a className="faq-card" href={t.url} target="_blank" rel="noreferrer">
-                <span className="faq-card-img" style={{ backgroundImage: `url(${t.img})` }} />
-                <span className="faq-card-title">{t.title}</span>
-              </a>
+              {internalConnectedServices && t.title === "Connected Services" ? (
+                <Link className="faq-card" to="/faq/connected-services">
+                  <span className="faq-card-img" style={{ backgroundImage: `url(${t.img})` }} />
+                  <span className="faq-card-title">{t.title}</span>
+                </Link>
+              ) : (
+                <a className="faq-card" href={t.url} target="_blank" rel="noreferrer">
+                  <span className="faq-card-img" style={{ backgroundImage: `url(${t.img})` }} />
+                  <span className="faq-card-title">{t.title}</span>
+                </a>
+              )}
             </li>
           ))}
         </ul>
       </section>
 
+      <FaqSupportSections />
+    </>
+  );
+}
+
+/**
+ * "Not finding your answer?" contact cards + Customer Experience Center holiday
+ * schedule. Shown on every FAQ page (landing, topic, article) exactly as on
+ * the production site.
+ */
+export function FaqSupportSections() {
+  return (
+    <>
       {/* ---------- Contact section ---------- */}
       <section className="faq-contact">
         <h3 className="faq-contact-heading">NOT FINDING YOUR ANSWER?</h3>

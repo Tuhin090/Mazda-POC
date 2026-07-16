@@ -7,3 +7,10 @@ backend/mazda.db
 .env
 .env.local
 frontend/.env.local
+.playright*
+.playwright-mcp/
+.claude
+*/.DS_Store
+asset-harvest.json
+# large homepage videos are re-downloaded via `npm run fetch:assets` (frontend/)
+frontend/public/mazda/**/*.mp4

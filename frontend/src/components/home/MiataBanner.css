@@ -1,0 +1,58 @@
+/* MX-5 full-bleed banner — white copy block over left of image; content col
+   370px pad 36px 12px, fade 0.8s cubic-bezier(.25,.46,.45,.94) (live 2026-07-16). */
+
+.mz-miata {
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.mz-miata > img {
+  width: 100%;
+  min-height: 480px;
+  object-fit: cover;
+}
+
+.mz-miata__content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 370px;
+  padding: 36px 12px;
+  color: #fff;
+}
+
+.mz-miata__content h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mz-miata__content h1 {
+  margin: 0 0 28px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.mz-miata__content p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width: 1024px) {
+  .mz-miata__content {
+    left: 24px;
+    width: 320px;
+  }
+}

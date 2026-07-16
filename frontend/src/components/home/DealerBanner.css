@@ -1,0 +1,28 @@
+/* Find-a-dealer 50/50 banner. */
+
+.mz-dealer {
+  margin-top: 110px;
+}
+
+.mz-dealer__split {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.mz-dealer__split img {
+  width: 100%;
+}
+
+.mz-dealer__copy .mz-section-title {
+  font-size: 28px;
+  letter-spacing: 2.8px;
+}
+
+@media (max-width: 1024px) {
+  .mz-dealer__split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

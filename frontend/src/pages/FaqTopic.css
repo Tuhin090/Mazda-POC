@@ -1,0 +1,184 @@
+/* ===== Connected Services FAQ topic + article pages =====
+   Internal replica of faq.mazdausa.com/s/topic/... and /s/article/...
+   Values lifted from the live site's computed styles (DevTools):
+   topic/article title 700 18px/20px, 3.6px tracking, uppercase, #2b2b2b,
+   centered; question rows 700 13px uppercase; answer text 16px, 3.2px
+   tracking, #676464 (one-line ellipsis preview on the topic page);
+   dividers 1px rgba(116,116,116,0.2). Only .faqt-* selectors live here —
+   the shared chrome/search/contact styles stay in Faq.css. */
+
+/* ---------- Breadcrumbs ---------- */
+.faqt-breadcrumbs {
+  max-width: var(--mz-maxw);
+  margin: 24px auto 8px;
+  padding: 0 16px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.faqt-breadcrumbs a,
+.faqt-crumb-current {
+  font-family: var(--mz-font);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+.faqt-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.faqt-crumb-current {
+  color: rgba(0, 0, 0, 0.85);
+}
+.faqt-crumb-sep {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Shared page sections ---------- */
+.faqt-topic,
+.faqt-article {
+  max-width: var(--mz-maxw);
+  margin: 0 auto;
+  padding: 16px 48px 48px;
+}
+
+.faqt-title {
+  font-family: var(--mz-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: var(--mz-ink);
+  text-align: center;
+  margin: 8px 0 32px;
+}
+
+.faqt-error {
+  font-family: var(--mz-font);
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  color: var(--mz-gray);
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* ---------- Topic page Q&A list ---------- */
+.faqt-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.faqt-qa {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.faqt-question {
+  font-family: var(--mz-font);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+.faqt-qa:hover .faqt-question {
+  text-decoration: underline;
+}
+.faqt-summary {
+  font-family: var(--mz-font);
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3.2px;
+  color: var(--mz-gray);
+  margin: 10px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.faqt-divider {
+  border: none;
+  border-top: 1px solid rgba(116, 116, 116, 0.2);
+  margin: 20px 0;
+}
+
+/* ---------- Article page ---------- */
+.faqt-article-body {
+  font-family: var(--mz-font);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3.2px;
+  color: var(--mz-gray);
+  margin: 0 0 48px;
+}
+.faqt-article-divider {
+  margin: 32px 0;
+}
+
+.faqt-feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+.faqt-feedback-heading {
+  font-family: var(--mz-font);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: var(--mz-ink);
+  margin: 0;
+}
+.faqt-feedback-thanks {
+  font-family: var(--mz-font);
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  color: var(--mz-gray);
+  margin: 0;
+}
+.faqt-feedback-actions {
+  display: flex;
+  gap: 8px;
+}
+.faqt-feedback-actions button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 18px;
+  font-family: var(--mz-font);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.faqt-feedback-actions button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .faqt-topic,
+  .faqt-article {
+    padding: 16px 24px 40px;
+  }
+}
+@media (max-width: 560px) {
+  .faqt-topic,
+  .faqt-article {
+    padding: 12px 16px 32px;
+  }
+  .faqt-title {
+    letter-spacing: 2.4px;
+  }
+}

@@ -14,12 +14,15 @@
     <!-- Synchronous: runs before React, before any SF bootstrap script.
          Clears the Mazda_Prechat_ESD (unauthorized) session from storage on every
          dashboard page load so SDO_Messaging_for_Web always starts fresh.
-         Skips the public pages ("/" FAQ landing and "/login") which both carry the
-         unauthorized agent, so the in-progress chat survives navigation between them. -->
+         Skips the public pages ("/" homepage, "/login", "/faq" landing and the
+         public FAQ topic/article pages under "/faq/") which all carry the
+         unauthorized agent, so the in-progress chat survives navigation between
+         them. -->
     <script>
       (function () {
-        var publicPaths = ['/', '/login'];
-        if (publicPaths.indexOf(window.location.pathname) !== -1) return;
+        var publicPaths = ['/', '/login', '/faq'];
+        if (publicPaths.indexOf(window.location.pathname) !== -1 ||
+            window.location.pathname.indexOf('/faq/') === 0) return;
         var orgId = '00DHo00000dXCjt';
         try {
           [localStorage, sessionStorage].forEach(function (store) {

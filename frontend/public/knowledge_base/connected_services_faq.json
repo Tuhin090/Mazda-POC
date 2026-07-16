@@ -1,0 +1,245 @@
+{
+  "topic": "Connected Services",
+  "articles": [
+    {
+      "slug": "How-can-I-start-my-engine-using-the-remote-engine-start-in-the-MyMazda-app",
+      "question": "How can I start my engine using the remote engine start in the MyMazda app?",
+      "answer": "For Mazda Connected Services enabled vehicles, press and hold down the start button until the outside ring is completely filled to start the engine remotely."
+    },
+    {
+      "slug": "How-can-I-turn-off-my-vehicle-using-remote-services-in-the-MyMazda-app",
+      "question": "How can I turn off my vehicle using remote services in the MyMazda app?",
+      "answer": "For Mazda Connected Services enabled vehicles, manually flip the center of the app from “START” to “STOP” then press and hold down the stop button until the outside ring is completely filled to turn off the engine remotely. Note: The circle icon in the MyMazda app does not automatically change from START to STOP after a Remote Engine Start request was sent. Users must manually change if they want to initiate a Remote Engine Stop. Also note, the app does not show if the engine is running or for how long. The app only shows if the Remote Engine Start / Stop request was successfully sent in the My Mazda app’s inbox."
+    },
+    {
+      "slug": "Is-MyMazda-app-registration-required-to-use-Mazda-Connected-Services",
+      "question": "Is MyMazda app registration required to use Mazda Connected Services?",
+      "answer": "Yes, MyMazda app registration is required, and to activate Mazda Connected Services, users are required to provide certain additional enrollment information in their registered MyMazda app account. Users can download the app from the Apple App Store or Google Play Store and follow the registration instructions."
+    },
+    {
+      "slug": "Can-I-use-my-tablet-or-iPad-to-access-Mazda-Connected-Services-instead-of-my-smartphone",
+      "question": "Can I use my tablet or iPad to access Mazda Connected Services instead of my smartphone?",
+      "answer": "Yes, but some functionalities may not work properly as they are not fully supported on tablet platforms."
+    },
+    {
+      "slug": "Why-does-Mazda-Connected-Services-show-up-in-the-MyMazda-app-if-I-am-not-enrolled",
+      "question": "Why does Mazda Connected Services show up in the MyMazda app if I am not enrolled?",
+      "answer": "When a vehicle with Mazda Connected Services capability is added to the MyMazda app, the app recognizes the vehicle as “connected services” capable. Even if you don’t enroll in the Mazda Connected Services, the MyMazda app will display the connected features; however, none of the functions will work until enrollment is complete."
+    },
+    {
+      "slug": "Why-does-my-vehicle-not-respond-right-away-when-using-remote-services",
+      "question": "Why does my vehicle not respond right away when using remote services?",
+      "answer": "When using some remote services (i.e. remote start/stop, unlocking/locking doors, etc.), it may take up to 30 seconds for the request to be received by the vehicle."
+    },
+    {
+      "slug": "Can-I-add-multiple-drivers-to-the-same-Mazda-Connected-Services-account",
+      "question": "Can I add multiple drivers to the same Mazda Connected Services account?",
+      "answer": "Yes, the primary driver must invite additional drivers to Mazda Connected Services via the MyMazda app. The primary driver can invite up to four additional drivers. To Add More Drivers: Navigate to the \"hamberger menu\" (i.e., three vertical lines icon) on the top right of the MyMazda app screen Click MyMazda Click My Vehicle Switch from \"Vehicle Info\" to \"Drivers\" in the center of the screen Click on Manage Drivers button on the bottom of the app Click on Invite Driver button on the bottom on the app Enter the required information (e.g., First Name, Last Name, and Email) and select vehicle access level Click Send Invite button on the bottom of the MyMazda app1 1The primary driver can invite up to 3 additional drivers To Cancel Other Drivers: Navigate to the \"hamberger menu\" (i.e., three vertical lines icon) on the top right of the MyMazda app screen Click MyMazda Click My Vehicle Switch from \"Vehicle Info\" to \"Drivers\" in the center of the screen Click on Manage Drivers button on the bottom of the MyMazda app Click on the user you would like to cancel and click Cancel Invitation"
+    },
+    {
+      "slug": "Why-are-my-remote-services-not-operating",
+      "question": "Why are my remote services not operating?",
+      "answer": "Remote Services will not work if the key fob is inside the vehicle, or if any of the vehicle’s doors, hood, or trunk are open. Remote services will also not work if the user is sending multiple requests in a 60 second period. Note: Only one remote request should be sent per 60-second period."
+    },
+    {
+      "slug": "Why-am-I-receiving-a-failed-message-when-trying-to-use-remote-services",
+      "question": "Why am I receiving a \"failed\" message when trying to use remote services?",
+      "answer": "Only a single remote request can be made per a 60-second period. If several requests are sent within a 60 second period, the request may be delayed or may not go through. For example, if the user makes a “remote unlock” request by accident and would now like to send a “remote lock” request, the user will need to wait 60 seconds for the initial request cycle to be completed before making the second request."
+    },
+    {
+      "slug": "Why-does-my-engine-turn-off-after-I-open-my-door-when-using-remote-services",
+      "question": "Why does my engine turn off after I open my door when using remote services?",
+      "answer": "For safety and security, the vehicle was designed to shut-off automatically when a door is opened after being started remotely."
+    },
+    {
+      "slug": "Why-is-the-vehicle-status-inaccurate",
+      "question": "Why is the vehicle status inaccurate?",
+      "answer": "The vehicle status is not pulled into the MyMazda app in “real-time”. In order to account for passengers needing time to remove items from their vehicle, there is a few minutes delay of the door open/closed/locked/unlocked status being reflected on the My Mazda app."
+    },
+    {
+      "slug": "Can-I-use-remote-services-if-I-have-a-manual-transmission",
+      "question": "Can I use remote services if I have a manual transmission?",
+      "answer": "For Mazda Connected Services enabled vehicles with manual transmissions, all remote services are available except the Remote Engine Start/Stop function."
+    },
+    {
+      "slug": "How-long-will-my-engine-stay-on-when-initiated-by-remote-services-in-the-MyMazda-app",
+      "question": "How long will my engine stay on when initiated by remote services in the MyMazda app?",
+      "answer": "Once remote engine start has been initiated, the engine will stay running for 15 minutes before shutting off."
+    },
+    {
+      "slug": "Will-my-doors-automatically-unlock-when-remote-engine-start-is-initiated-using-remote-services-in-the-MyMazda-app",
+      "question": "Will my doors automatically unlock when remote engine start is initiated using remote services in the MyMazda app?",
+      "answer": "Once remote engine start has been initiated, the doors will remain locked until the user unlocks the door themselves using their key fob, or sends a request in the app."
+    },
+    {
+      "slug": "Is-internet-connection-required-to-access-the-MyMazda-application",
+      "question": "Is internet connection required to access the MyMazda application?",
+      "answer": "Yes. The MyMazda app will not work without internet connection."
+    },
+    {
+      "slug": "When-pairing-the-MyMazda-application-account-to-the-vehicle-does-the-authorization-code-expire",
+      "question": "When pairing the MyMazda application account to the vehicle, does the authorization code expire?",
+      "answer": "Yes, the authorization code expires after 5 minutes. Users can request to re-send an authorization code via the MyMazda app. Note: It may take up to 1 minute for this code to be displayed on the Mazda Connect In-Vehicle Display."
+    },
+    {
+      "slug": "Why-does-my-remote-services-not-work-if-the-key-s-are-left-in-the-vehicle",
+      "question": "Why does my remote services not work if the key(s) are left in the vehicle?",
+      "answer": "The key fob must be outside of the vehicle in order to initiate remote services. Users will see a “Fail” error message upon making a remote service request (e.g., remote engine start) if they leave the key in the vehicle."
+    },
+    {
+      "slug": "What-is-the-difference-between-the-validation-code-and-the-authorization-code",
+      "question": "What is the difference between the validation code and the authorization code?",
+      "answer": "Both codes are for security purposes. Validation Code: Used for two-way authentication to verify a user when initially signing into the MyMazda app. This code is sent to the user’s smartphone device via SMS. All MyMazda app users will go through the validation process. Authorization Code: Used to pair the user’s MyMazda account to the vehicle. This code is sent to the Mazda Connect In-Vehicle Display. The user will enter the authorization code from the Mazda Connect In-Vehicle Display into the MyMazda app. Note: It may take up to a minute for this code to be displayed on the Mazda Connect In-Vehicle Display. Only vehicles that have Connected Services capabilities can go through the authorization process."
+    },
+    {
+      "slug": "How-do-I-locate-my-IMEI-number",
+      "question": "How do I locate my IMEI number?",
+      "answer": "Owners may access their IMEI number through the MyMazda application. Please log into the app and follow the steps listed below: 1) Select the hamburger menu (three vertical-line icon) 2) Select Support 3) Select Quick Links 4) Select In-Car Wi-Fi to populate the IMEI number"
+    },
+    {
+      "slug": "What-is-Mazda-Connected-Services",
+      "question": "What is Mazda Connected Services?",
+      "answer": "Mazda Connected Services provides a set of optional connectivity features that allow remote interaction between your vehicle and smartphone. Current available features of Mazda Connected Services include remote vehicle control (e.g., remote engine start/stop, remote door lock/unlock) and remote vehicle status. You can find more information about Mazda Connected Services here: Connected Services User Guide"
+    },
+    {
+      "slug": "How-can-I-connect-to-the-in-car-Wi-Fi-hotspot",
+      "question": "How can I connect to the in-car Wi-Fi hotspot?",
+      "answer": "To access the in-car WiFi, please verify the following information: 1. The WiFi on your smartphone device is turned on. 2. Your vehicle is running, or in accessory mode. 3. You have found the vehicle WiFi network name (ex: MazdaWiFi) and found your network password on the vehicle center screen. To find your Wi-Fi network name on the vehicle center screen: 1. Select Settings from MENU 2. Select Connectivity Settings 3. Select Wi-Fi Settings 4. Select SSID 5. Find the Access Point Name (SSID) on your device, then select it To find your Wi-Fi network password on the vehicle center screen: 1. Select Settings from MENU 2. Select Connectivity Settings 3. Select Wi-Fi Settings 4. Select Wi-Fi Password 5. Enter the password on your device to connect to the Wi-Fi network 6. Open a web browser on your device and you will automatically be redirected to the Wi-Fi trial sign-up page. Select the option to start your trial on that sign-up page 7. Complete all the required fields and accept the terms of the Verizon customer agreement You will then receive a confirmation email – it may take up to 15 minutes for the Wi-Fi to activate. Please note: In-Car Wi-Fi will be unavailable once Mazda Connected Services is deactivated."
+    },
+    {
+      "slug": "Will-information-I-provide-in-the-MyMazda-app-to-enroll-in-Mazda-Connected-Services-be-deleted-when-I-unenroll-from-Mazda-Connected-Services",
+      "question": "Will information I provide in the MyMazda app to enroll in Mazda Connected Services be deleted when I unenroll from Mazda Connected Services?",
+      "answer": "All personal information and information provided in the MyMazda app related to Mazda Connected Services that directly or indirectly enables the identification of users will be deleted upon unenrollment from Mazda Connected Services. Anonymized information may be used for product quality, data analysis, research, and product development. For further information on data privacy, please refer to our Connectivity Privacy Policy"
+    },
+    {
+      "slug": "Can-I-use-Connected-Services-to-turn-on-my-air-conditioning-heater-HVAC-systems",
+      "question": "Can I use Connected Services to turn on my air-conditioning/heater (HVAC) systems?",
+      "answer": "Remote Climate Control is available for applicable Mazda Electric Vehicle (EV) and Plug-in Hybrid (PHEV) models. You can access your MyMazda App with an active Mazda Connected Services account to remotely start/stop climate control and select the desired temperate setting. Please note that the Remote Climate Control will not operate if the vehicle is in any of the following conditions: - The power switch is switched ON or ACC. - Door hood is open - Remaining battery charge level is low Remove Climate Control via Mazda Connected Services is currently not offered for Internal Combustion Engine (ICE) vehicles. To verify if your Mazda vehicle has the Remote Climate Control feature, please check here"
+    },
+    {
+      "slug": "Does-my-vehicle-have-Mazda-Connected-Services",
+      "question": "Does my vehicle have Mazda Connected Services?",
+      "answer": "Mazda Connected Services is available for 2019 and newer vehicles, subject to model and model year availability. For a full list of applicable vehicle models and model year that are compatible with Mazda Connected Services, please check here Note: that in addition to the optional Mazda Connected Services feature, these vehicles will automatically and regularly collect certain Default Data from your vehicle and transmit the Default Data to Mazda. Please refer to our Connectivity Privacy Policy for more information and details on how to opt-out."
+    },
+    {
+      "slug": "Is-there-a-subscription-fee-for-Mazda-Connected-Services",
+      "question": "Is there a subscription fee for Mazda Connected Services?",
+      "answer": "The complimentary Mazda Connected Services trial begins on the date of purchase or lease of a new vehicle. The Complimentary Trial Period is: • 1 year for all 2025 models and newer (excluding 2025MY CX-70 which is 3-years). • 3-years for all applicable 2019 – 2024 models. Once the complimentary trial period is expired, a monthly subscription fee (with applicable taxes/fees) will apply to maintain access to Mazda Connected Services For more information on Mazda Connected Services, please check here"
+    },
+    {
+      "slug": "How-do-I-enroll-in-Mazda-Connected-Services",
+      "question": "How do I enroll in Mazda Connected Services?",
+      "answer": "Owners can enroll in Mazda Connected Services by downloading the MyMazda smartphone application available on the Apple App Store or Google Play Store. Please note that your vehicle must have Mazda Connected Services capability to enroll. After downloading the MyMazda App and registering for a MyMazda account, please follow the steps outlined in-app to register your Mazda Connected Services eligible vehicle and complete the enrollment process. For further information on Mazda Connected Services including enrollment instructions, please click here to access the Mazda Connected Service Manual"
+    },
+    {
+      "slug": "How-long-is-the-Mazda-Connected-Services-Complimentary-Trial",
+      "question": "How long is the Mazda Connected Services Complimentary Trial?",
+      "answer": "Your complimentary trial for Mazda Connected Services begins on the date your vehicle is first purchased, leased, or placed into service, whichever comes first. The length of the trial depends on your vehicle’s model and model year: • 1 year of complimentary service for all 2025 and newer models (except the 2025 CX‑70) • 3 years of complimentary service for eligible 2019–2024 models and the 2025 CX‑70 You can check your exact trial end date anytime in the MyMazda app by going to Menu → MyMazda → Connected Services."
+    },
+    {
+      "slug": "After-the-trial-ends-how-much-does-Mazda-Connected-Services-cost",
+      "question": "After the trial ends, how much does Mazda Connected Services cost?",
+      "answer": "After your complimentary trial expires, your ongoing Connected Services options vary based on your vehicle's model year and the capabilities built into your vehicle. For all Mazdas equipped with Connected Services (except for 2026 CX-5), one paid subscription plan is available. Connected Services - Preferred Plan ($10/month) Includes: Remote Engine Start/Stop Remote Lock/Unlock Vehicle Finder Vehicle Status Monitor Vehicle Health Report Send-to-Car Navigation Guest Driver Alert For 2026 Mazda CX-5, after the trial ends, your vehicle continues to receive complimentary Basic Plan Connectivity for up to 9 additional years, which includes vehicle health and status information. You may also choose to subscribe to one of the following paid subscription service plans: Connected Services - Preferred Plan ($10/month) Includes: Remote Engine Start/Stop Remote Lock/Unlock Vehicle Finder Vehicle Status Monitor Vehicle Health Report Send-to-Car Navigation Guest Driver AlertPrivate eCall (Emergency Calling) Stolen Vehicle Assistance Connected Services - Premium Plan ($15/month) Includes all Preferred Plan features, plus: Access to Google Built-In services (where equipped), including Google Maps, Google Assistant, and Google Play apps Feature availability differs because Connected Services capabilities vary by vehicle platform, hardware, and model year."
+    },
+    {
+      "slug": "Does-the-Mazda-Connected-Services-paid-subscription-plan-auto-renew",
+      "question": "Does the Mazda Connected Services paid subscription plan auto‑renew?",
+      "answer": "Yes. If you choose to enroll in a paid Mazda Connected Services subscription, it will automatically renew each month so your connected features continue without interruption. You can manage or cancel your subscription anytime through the MyMazda app."
+    },
+    {
+      "slug": "What-payment-options-are-available-for-a-Mazda-Connected-Services-paid-subscription",
+      "question": "What payment options are available for a Mazda Connected Services paid subscription?",
+      "answer": "Mazda Connected Services is billed monthly, and payments are handled securely through Stripe. You can use any major credit card to pay for your subscription, including Visa, Mastercard, Discover, and American Express."
+    },
+    {
+      "slug": "How-do-I-manage-my-payment-preferences",
+      "question": "How do I manage my payment preferences?",
+      "answer": "You can manage your payment information anytime by signing in at owners.mymazda.com. Select Manage Billing to update your credit card details or review your billing information."
+    },
+    {
+      "slug": "How-do-I-cancel-my-Mazda-Connected-Services-paid-subscription",
+      "question": "How do I cancel my Mazda Connected Services paid subscription?",
+      "answer": "To cancel your subscription, go to owners.mymazda.com and select Manage Billing > Cancel plan. The subscription will finish at the end of your current billing cycle, and you won't be charged again."
+    },
+    {
+      "slug": "I-own-a-used-or-Certified-Pre-Owned-Mazda-What-does-this-mean-for-Connected-Services",
+      "question": "I own a used or Certified Pre‑Owned Mazda. What does this mean for Connected Services?",
+      "answer": "Used and Certified Pre‑Owned Mazda vehicles may still qualify for a complimentary Connected Services trial. Eligibility depends on the vehicle’s original warranty start date, not the date you purchased it. To check your specific vehicle’s eligibility and trial end date, you can check in any of these ways: MyMazda app: Open Menu → MyMazda → Connected Services to view your trial status. Local Mazda dealership: Your dealer can look up your vehicle’s Connected Services eligibility and answer related questions. Mazda Customer Experience Center: A representative can review your VIN and provide personalized assistance with eligibility and account support. Please click here to contact us. They can confirm eligibility and answer any questions about your vehicle’s Connected Services."
+    },
+    {
+      "slug": "I-have-questions-about-my-subscription-Who-can-I-contact",
+      "question": "I have questions about my subscription. Who can I contact?",
+      "answer": "For help with your Mazda Connected Services subscription, you can reach Mazda’s Customer Experience Center at (800) 222‑5500. Representatives are available Monday–Friday from 5:00 AM to 6:00 PM PT and Saturday from 7:00 AM to 3:00 PM PT. You’ll also find additional contact options on Mazda’s support website."
+    },
+    {
+      "slug": "How-can-I-turn-off-Connected-Services-data-communication-and-what-happens-when-I-do",
+      "question": "How can I turn off Connected Services data communication, and what happens when I do?",
+      "answer": "Mazda vehicles allow you to control how and when data is communicated. You can disable data communication temporarily from the vehicle or request permanent disablement through Mazda's customer support team. Each option affects Connected Services differently. Temporary Deactivation (In Vehicle) You can temporarily turn off Data Communication directly from the vehicle. How to do it: Mazda Connected Vehicles (Except 2026 CX-5): Instructions are available here. 2026 CX-5: Within the infotainment system, navigate to Settings → Privacy → Data Communication When Data Communication is turned off temporarily: Connected Services Operation Connected Services features may become limited or unavailable. MyMazda app remote functions-such as remote start, lock/unlock, vehicle status, and send to car navigation-will not operate. However, other features including Over-the-Air Updates (OTA); SiriusXM; Private eCall; Stolen Vehicle Assistance (SVA); and offline versions of Google Built-In features will continue to operate. Vehicle Data Behavior The vehicle may continue to store limited information locally, including cybersecurity and system integrity logs; basic diagnostic information system health data required for safety, stability, and regulatory compliance. However, no data is transmitted to Mazda while Data Communication is turned off. This stored data remains in the vehicle until Data Communication is re-enabled. When You Turn Data Communication Back On Previously stored system data may be transmitted to Mazda so the vehicle's systems and Connected Services can resume operating securely and correctly. The MyMazda app will regain access once the vehicle completes its data synchronization. OTA updates that were paused may resume. Full Deactivation (Permanent Turn Off via TCU Deactivation) Mazda also offers a full disablement option if you want to completely stop Connected Services-including features that cannot be toggled off from inside the vehicle. Full disablement permanently disables all Connected Services; turns off all MyMazda remote features; disables Private eCall; and disables OTA updates, including critical feature updates. How to request full disablement: Contact Mazda Customer Assistance at (800)-222-5500. Once full disablement is performed, Connected Services cannot be restored unless you request re-enablement through Mazda Customer Assistance."
+    },
+    {
+      "slug": "How-do-I-enroll-in-Mazda-Connected-Services-using-a-Paid-Subscription-Plan",
+      "question": "How do I enroll in Mazda Connected Services using a Paid Subscription Plan?",
+      "answer": "After the vehicle’s Complimentary Trial expires, a Paid Subscription Plan is required to use Mazda Connected Services. To create a Paid Subscription Plan, select Enroll in the MyMazda App for the vehicle you want to enroll, and follow the prompts in the “Subscription Required” popup screen by going to MyMazda.com on your phone’s web browser and logging in with your MyMazda credentials. Once logged in, navigate to Owner Resources < Mazda Connected Services then select Get Started to set up a Paid Subscription Plan. After the Paid Subscription Plan is created, we recommend that you log out and close the MyMazda App, then log back in. Next, select the vehicle you created a paid subscription plan for, select Enroll, and follow the prompts to finish the setup."
+    },
+    {
+      "slug": "Why-does-my-vehicle-keep-turning-off-when-I-start-it-remotely",
+      "question": "Why does my vehicle keep turning off when I start it remotely?",
+      "answer": "For safety, security, and emissions, your remotely started Mazda vehicle is designed to automatically turn off after 15 minutes of idling, when a door, hood, or trunk is opened, or in the event a manual command is performed within the vehicle."
+    },
+    {
+      "slug": "When-should-I-delete-a-VIN-from-the-MyMazda-App",
+      "question": "When should I delete a VIN from the MyMazda App?",
+      "answer": "Multi-system data syncing is required to support Mazda Connected Services. Therefore, we do not recommend deleting a VIN from the MyMazda App in the event troubleshooting is required as this can result in additional delays. We only recommend deleting a VIN if you no longer own the vehicle."
+    },
+    {
+      "slug": "Why-are-my-remote-start-or-other-remote-command-features-not-working-or-failing-immediately",
+      "question": "Why are my remote start or other remote command features not working or failing immediately?",
+      "answer": "Remote Start and other remote commands (Lock, Unlock, Horn, Lights, etc.) may fail to operate — or fail instantly — when the vehicle cannot complete the required safety or connectivity checks. Possible reason: The key is inside the vehicle. What you can do: Remove the key fob from inside the cabin, step away from the vehicle, and try the remote command again. Possible reason: A door, hood, or trunk is open. What you can do: Check that all doors, the hood, and the trunk are fully closed. Once everything is latched, retry the command. Possible reason: The vehicle is in an area with poor reception (for example, the vehicle may be in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Move the vehicle to an area with stronger reception, then attempt the command again. A vertical connectivity icon indicating reception strength (such as or ) can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength. The vehicle connectivity icon is a vertical icon while cell phone battery strength is displayed using a horizontal icon; both are located in the corner of the infotainment system. Possible reason: The 12‑volt battery is low. What you can do: Start the vehicle manually and allow it to run for several minutes to recharge the battery. After charging or driving, retry the command. Possible reason: Too many remote commands were attempted simultaneously. What you can do: Wait several minutes for the system to reset, then try again. Possible reason: Your Complimentary Trial has ended and a Paid Subscription Plan is required. What you can do: Login to your MyMazda App and navigate to the hamburger menu (three horizontal lines) in the upper right corner of the Remote screen. Select MYMAZDA < Connected Services <Manage Subscription. You will be rerouted to the MyMazda Owner’s Portal. Locate your vehicle and select Enroll in Paid Plan. Once your Paid Subscription Plan is confirmed, fully log out and close your MyMazda app. It can take up to 12 hours for paid subscription data to sync and vehicle connectivity to be established. Once established, reopen the app and log back in to refresh data, then select your vehicle, Tap ENROLL, and follow the prompts to request the authorization code. Note: If you no longer have access to the email address associated with your original MyMazda App account and need help resetting your password or updating your email address, please contact our Customer Experience Center for assistance (800-222-5500). Possible reason: The vehicle is not in park. What you can do: Move the shift lever into park, close the door, step away from the vehicle, and try the command again. Possible reason: The engine or accessory mode has been activated, or other manual commands are being performed from within the vehicle. What you can do: Turn off the engine or accessory mode, close the door, step away from the vehicle, and try the command again. Possible reason: The Connected Services communication settings have been temporarily deactivated within the vehicle. What you can do: Navigate to Connectivity settings within the Mazda Connect screen and reenable Connected Services. Allow a few minutes for the app to update after adjusting settings. Possible reason: The fuel level is too low. What you can do: Add more fuel to the vehicle then try the command again. Possible reason: Remote Start has been used too many times since the vehicle was last driven or started manually. What you can do: Start the vehicle manually and drive at least one mile to reset the remote start count. Possible reason: You own a Plug-in Hybrid Electric Vehicle (PHEV) which does not have a remote engine start feature; instead, the start and stop features are used for charging. What you can do: To precondition your PHEV, end any active charging sessions, then swipe the screen to the left. This will reveal your Climate Control options. After selecting the temperature setting and the defogger on/off on the setting screen, press the SEND button. Possible reason: A charging session has been initiated for your Plug-in Hybrid Electric Vehicle (PHEV). What you can do: For Plug-in Hybrid Electric Vehicles (PHEVs), only the Stop Charging command can be performed during a charging session. Possible reason: The vehicle has been parked or stored for one or more weeks causing the system to go into sleep mode. What you can do: Start the vehicle manually and drive a few miles to reset the system. Possible reason: The vehicle is displaying the “check engine” warning light or has identified a technical or mechanical issue. What you can do: Contact your preferred dealer for a service visit."
+    },
+    {
+      "slug": "Why-won-t-the-MyMazda-App-update-my-vehicle-status",
+      "question": "Why won't the MyMazda App update my vehicle status?",
+      "answer": "The app may not refresh your vehicle status information if updated data cannot be sent from the vehicle. Possible reason: The vehicle is in an area with poor reception (for example, the vehicle may be in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Move the vehicle to an area with stronger reception (a vertical connectivity icon (such as or ) indicating reception strength can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength). Next, select the Status icon within the app, tap Vehicle Status to expand details, and pull down on the screen to refresh. Possible reason: The Connected Services communication settings have been temporarily deactivated within the vehicle. What you can do: Navigate to Connectivity settings within the Mazda Connect screen and reenable Connected Services. Allow a few minutes for the app to update after adjusting settings. Possible reason: The initial connection between the vehicle and server has been established, but data is not yet available. What you can do: Drive the vehicle at least one mile, then turn the ignition off. Information will populate in the app once the data is received and processed."
+    },
+    {
+      "slug": "Why-is-my-Vehicle-Finder-location-information-inaccurate",
+      "question": "Why is my Vehicle Finder location information inaccurate?",
+      "answer": "Location services are based on coordinates at last ignition-off and may be inaccurate if the vehicle cannot reliably transmit positioning data. Possible reason: The vehicle is in an area with poor reception (for example, the vehicle may be in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Ensure the vehicle is parked in an area with stronger reception (a vertical connectivity icon (such as or ) indicating reception strength can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength). Provided the vehicle has the required connectivity, the vehicle location will update after the next ignition off. Possible reason: The vehicle is currently being driven. What you can do: Wait for the vehicle’s ignition to be turned off, then try Vehicle Finder again. Possible reason: The 12‑volt battery is low and cannot support location reporting. What you can do: Start and drive the vehicle for several minutes to recharge the battery, then retry Vehicle Finder."
+    },
+    {
+      "slug": "Why-is-the-MyMazda-App-not-connecting-or-showing-general-errors",
+      "question": "Why is the MyMazda App not connecting or showing general errors?",
+      "answer": "Connectivity issues often occur when the phone or app cannot communicate reliably with the vehicle or servers. Possible reason: The phone and/or vehicle is in an area with poor reception (for example, in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Move the vehicle to an area with stronger reception, then attempt the command again. A vertical connectivity icon indicating reception strength (such as or ) can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength. The vehicle connectivity icon is a vertical icon while cell phone battery strength is displayed using a horizontal icon; both are located in the corner of the infotainment system. Possible reason: The app is outdated. What you can do: Open your device’s app store and install the latest version of the MyMazda app. Possible reason: The app is currently experiencing a network outage. What you can do: Occasionally, you may receive an in-app or email notification advising Mazda Connected Services are unavailable due to maintenance. We apologize for any inconvenience and will restore services as quickly as possible. Possible reason: Your phone’s Cookie settings are disabling/greying out your MyMazda login capabilities. What you can do: Navigate to your phone’s Settings, locate app settings, update your preferred internet browser’s Cookie settings to enable Cookies, then try logging in again. For iPhone users, Cookie settings can be found by scrolling to the bottom of the browser screen and selecting Advanced."
+    },
+    {
+      "slug": "Why-is-the-MyMazda-App-showing-incorrect-fuel-level-or-tire-pressure",
+      "question": "Why is the MyMazda App showing incorrect fuel level or tire pressure?",
+      "answer": "Incorrect readings appear when the app has not received refreshed data from the vehicle. Possible reason: The vehicle has not recently been driven long enough to send new data. What you can do: Drive the vehicle for a few minutes, then refresh status in the app. Cycling the ignition may be required. Possible reason: The vehicle is in an area with poor reception (for example, the vehicle may be in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Move the vehicle to an area with stronger reception or wait for conditions to improve (a vertical connectivity icon (such as or ) indicating reception strength can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength). Next, select the Status icon within the app, tap Vehicle Status to expand details, then pull down on the screen to refresh. Possible reason: Your vehicle may not be compatible with this feature. What you can do: Please review our Mazda Connected Services compatibility chart to confirm your vehicle’s connectivity features."
+    },
+    {
+      "slug": "Why-is-the-authorization-code-OTP-not-appearing-in-my-car-during-enrollment",
+      "question": "Why is the authorization code (OTP) not appearing in my car during enrollment?",
+      "answer": "Enrollment may fail if the vehicle cannot establish the connection needed to generate the authorization code. Possible reason: The vehicle is in an area with poor reception (for example, the vehicle may be in a parking garage or underground structure) and is unable to transmit the required data. What you can do: Move the vehicle to an area with stronger reception, then attempt the command again. A vertical connectivity icon indicating reception strength (such as or ) can be viewed in the corner of your infotainment system. Navigating to your FM radio may be required for select models. Note: Three bars, or a half-full icon indicates good connectivity strength. The vehicle connectivity icon is a vertical icon while cell phone battery strength is displayed using a horizontal icon; both are located in the corner of the infotainment system. Possible reason: You are actively using a VPN on your phone. What you can do: Turn off the VPN and request the authorization code again. Possible reason: Your vehicle is still establishing connectivity. What you can do: Initial connectivity may require up to 12 hours to be established. Ensure the communication line has been established, then try the request again. Possible reason: You requested the OTP during a phone call while connected to Android Auto or Apple CarPlay. What you can do: Navigate to the Home screen within the Infotainment System and/or end the phone call and request the OTP again. Possible reason: A temporary system issue is preventing the Request Authorization Code from generating within the vehicle. What you can do: Turn the vehicle off completely, restart it, and try again. If the code still does not appear, please contact our Customer Experience Center for assistance (800-222-5500)."
+    },
+    {
+      "slug": "Why-am-I-seeing-No-registered-connected-vehicle-found-on-your-account-when-signing-up-for-a-Paid-Subscription-Plan-on-MyMazda-com",
+      "question": "Why am I seeing “No registered connected vehicle found on your account” when signing up for a Paid Subscription Plan on MyMazda.com?",
+      "answer": "This happens when the MyMazda server cannot verify ownership. Possible reason: Your vehicle ownership status within the Mazda’s server may need to be updated or has not synchronized yet. What you can do: Allow up to 24 hours, then try again. If still message is still displayed, please contact our Customer Experience Center for assistance (800-222-5500). Possible reason: The email address tied to your MyMazda App account does not match the email address associated with the Paid Subscription Plan. What you can do: Please make sure that you are using the same email address for your enrollment and Paid Subscription Plan. If you no longer have access to the email address associated with your original MyMazda App account and need help resetting your password or updating your email address, please contact our Customer Experience Center for assistance (800-222-5500)."
+    },
+    {
+      "slug": "Why-is-the-MyMazda-App-prompting-me-to-enroll-after-I-already-paid-for-a-subscription",
+      "question": "Why is the MyMazda App prompting me to enroll after I already paid for a subscription?",
+      "answer": "Creating a Paid Subscription Plan and enrolling are two different steps. Possible reason: Payment was completed, but enrollment was not. What you can do: Open the MyMazda App, select your vehicle, Tap ENROLL, and follow the prompts to request the authorization code. Possible reason: Payment was completed, but a subscription required message is still popping up. What you can do: It can take up to 12 hours for the connection to be established. We recommend that you fully log out and close your MyMazda app, then reopen the app and log back in to refresh the data. Possible reason: The email address tied to your MyMazda App account does not match the email address associated with the Paid Subscription Plan. What you can do: Please make sure that you are using the same email address for your enrollment and Paid Subscription Plan. If you no longer have access to the email address associated with your original MyMazda App account and need help resetting your password or updating your email address, please contact our Customer Experience Center for assistance (800-222-5500)."
+    },
+    {
+      "slug": "Where-can-I-find-the-Connected-Services-Privacy-Policy-and-Terms-Conditions",
+      "question": "Where can I find the Connected Services Privacy Policy and Terms & Conditions?",
+      "answer": "You can access the Mazda Connected Services Privacy Policy and the Terms & Conditions in several places: During Enrollment: Both documents are presented as part of the Connected Services enrollment flow, where you review and accept them before activating services. MyMazda App: Navigate to Account → Legal to view the latest versions at any time. MazdaUSA.com: Please click here to access the full Privacy Policy. These documents describe how Mazda handles Connected Services data and the terms that apply to your use of the service."
+    },
+    {
+      "slug": "What-features-are-included-in-Mazda-Connected-Services",
+      "question": "What features are included in Mazda Connected Services?",
+      "answer": "Mazda Connected Services offers a variety of convenient features designed to enhance your ownership experience. The exact features available can vary depending on your vehicle’s model and model year. You can view the full list of features available for your specific Mazda by clicking here"
+    }
+  ]
+}

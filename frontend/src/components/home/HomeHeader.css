@@ -1,0 +1,200 @@
+/* Header replica — live computed values at 1440px (2026-07-16):
+   bar 80px, transparent → white .3s ease-in-out (menu open), z 303;
+   nav btn 14px/500 ls1.3 uppercase; find-a-dealer 11px/500 ls2 uppercase;
+   logo = standard-icon-font \f142 at 40px, centered (center-logo-template);
+   flydown absolute below bar, white, transform .8s ease-in-out, z 302. */
+
+.mz-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 303;
+  font-family: var(--mz-font, "Mazda Type", helvetica, arial, sans-serif);
+}
+
+.mz-header__bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 32px;
+  background: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mz-header[data-theme="light"] .mz-header__bar {
+  background: #fff;
+}
+
+.mz-header__bar ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* left primary nav */
+.mz-header__nav button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 62px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.mz-header__caret {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.25s ease-in-out;
+}
+
+.mz-header__nav button.is-open .mz-header__caret {
+  transform: rotate(225deg) translateY(-2px);
+}
+
+/* centered logo */
+.mz-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mz-header__logo .mz-icon {
+  font-size: 40px;
+}
+
+/* right utility nav */
+.mz-header__misc ul {
+  gap: 24px;
+}
+
+.mz-header__dealer {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+
+.mz-header__user,
+.mz-header__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.mz-header__search .mz-icon {
+  font-size: 18px;
+}
+
+/* POC Help button — SEE OFFERS styling, inverts with the nav theme */
+.mz-header__help.mz-cta {
+  padding: 11px 18px;
+  background: #fff;
+  color: #000;
+}
+
+.mz-header__help.mz-cta:hover {
+  background: #d6d6d6;
+}
+
+/* light theme (menu open): dark content on white bar, Help inverts */
+.mz-header[data-theme="light"] .mz-header__nav button,
+.mz-header[data-theme="light"] .mz-header__dealer,
+.mz-header[data-theme="light"] .mz-header__user,
+.mz-header[data-theme="light"] .mz-header__search,
+.mz-header[data-theme="light"] .mz-header__logo {
+  color: #101010;
+}
+
+.mz-header[data-theme="light"] .mz-header__help.mz-cta {
+  background: #101010;
+  color: #fff;
+}
+
+.mz-header[data-theme="light"] .mz-header__help.mz-cta:hover {
+  background: #3a3a3a;
+}
+
+/* hover affordance on dark theme */
+.mz-header[data-theme="dark"] .mz-header__nav button:hover,
+.mz-header[data-theme="dark"] .mz-header__dealer:hover,
+.mz-header[data-theme="dark"] .mz-header__user:hover,
+.mz-header[data-theme="dark"] .mz-header__search:hover {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.mz-header[data-theme="light"] .mz-header__nav button:hover,
+.mz-header[data-theme="light"] .mz-header__dealer:hover,
+.mz-header[data-theme="light"] .mz-header__user:hover,
+.mz-header[data-theme="light"] .mz-header__search:hover {
+  color: #676565;
+}
+
+/* ---------- flydown ---------- */
+.mz-flydown {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mz-flydown__panel {
+  background: #fff;
+  transform: translateY(-102%);
+  transition: transform 0.8s ease-in-out;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+}
+
+.mz-flydown.is-open {
+  pointer-events: auto;
+}
+
+.mz-flydown.is-open .mz-flydown__panel {
+  transform: translateY(0);
+}
+
+@media (max-width: 1180px) {
+  .mz-header__bar {
+    padding: 0 16px;
+  }
+
+  .mz-header__bar ul {
+    gap: 16px;
+  }
+
+  .mz-header__nav button {
+    font-size: 12px;
+  }
+}
