@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from "react-router-dom";
 import Faq from "./pages/Faq";
+import FaqTopicPage from "./pages/FaqTopicPage";
+import FaqArticlePage from "./pages/FaqArticlePage";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ConnectedServices from "./pages/ConnectedServices";
@@ -46,6 +48,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Faq />} />
+        <Route path="/faq/connected-services" element={<FaqTopicPage />} />
+        <Route path="/faq/connected-services/article/:slug" element={<FaqArticlePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/auth" element={<AuthHandoff />} />
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
