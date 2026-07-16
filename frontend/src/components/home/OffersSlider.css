@@ -1,0 +1,122 @@
+/* Special offers slider — live layout (2026-07-16): SPECIAL OFFERS 14px/500
+   ls2.8 heading + "1 / 3" counter above a full-width image with side arrows;
+   deal copy + CTAs stacked below the image. */
+
+.mz-offers {
+  margin-top: 110px;
+}
+
+.mz-offers__intro {
+  margin-bottom: 40px;
+}
+
+.mz-offers__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.mz-offers__head h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.mz-offers__count {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #676565;
+}
+
+.mz-offers__media {
+  position: relative;
+  aspect-ratio: 1170 / 560;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.mz-offers__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mz-offers__media img.is-active {
+  opacity: 1;
+}
+
+.mz-offers__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #101010;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mz-offers__arrow:hover {
+  background: #fff;
+}
+
+.mz-offers__arrow--prev {
+  left: 18px;
+}
+
+.mz-offers__arrow--next {
+  right: 18px;
+}
+
+.mz-offers__slide {
+  padding-top: 26px;
+  animation: mz-offer-in 0.45s ease-out both;
+}
+
+@keyframes mz-offer-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mz-offers__deal {
+  margin: 0 0 22px;
+  max-width: 640px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.mz-offers__deal sup {
+  font-size: 10px;
+}
+
+.mz-offers__ctas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}

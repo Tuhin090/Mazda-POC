@@ -1,0 +1,64 @@
+/* Mazda Type + standard-icon-font — self-hosted under /public/mazda/.
+   Face declarations mirror mazdausa.com styles.min.css v1.20.2.0 (captured 2026-07-16).
+   Proprietary Mazda corporate typeface: authorized-POC use only, do not reuse elsewhere. */
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-regular.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-italic.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-medium.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-bold.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mazda Type";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/mazda/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff2") format("woff2"),
+    url("/mazda/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: standard-icon-font;
+  font-display: block;
+  src: url("/mazda/assets/theme/icons/standard-icon-font/standard-icon-font.woff2") format("woff2"),
+    url("/mazda/assets/theme/icons/standard-icon-font/standard-icon-font.woff") format("woff");
+}

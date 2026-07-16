@@ -1,0 +1,231 @@
+/* Discover carousel — live look (2026-07-16): centered 36px/500 ls3.6 title,
+   category/lifestyle toggle, centered 12px/700 tabs, 4 dark cards per view
+   (black card, media top, white text, outline CTAs), transform-slide track. */
+
+.mz-discover {
+  max-width: 1372px;
+  margin: 96px auto 0;
+  padding: 0 34px;
+}
+
+.mz-discover__head {
+  text-align: center;
+}
+
+.mz-discover__head h4 {
+  margin: 0 0 22px;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.mz-discover__mode {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.mz-discover__mode button {
+  padding: 8px 22px;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #676565;
+  cursor: pointer;
+}
+
+.mz-discover__mode button.is-active {
+  background: #101010;
+  border-color: #101010;
+  color: #fff;
+}
+
+.mz-discover__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.mz-discover__tabs button {
+  padding: 0 0 10px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #676565;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.mz-discover__tabs button.is-active,
+.mz-discover__tabs button:hover {
+  color: #101010;
+  border-bottom-color: #101010;
+}
+
+.mz-discover__viewport {
+  overflow: hidden;
+}
+
+.mz-discover__track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mz-vcard {
+  flex: 0 0 25%;
+  padding: 0 8px;
+}
+
+.mz-vcard__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #101010;
+  color: #fff;
+}
+
+.mz-vcard__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.mz-vcard__media img,
+.mz-vcard__media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mz-vcard__media video {
+  z-index: 1;
+}
+
+.mz-vcard__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 18px;
+  padding: 16px 18px 20px;
+}
+
+.mz-vcard__year {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mz-vcard__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.mz-vcard__specs p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mz-vcard__specs sup {
+  font-size: 8px;
+}
+
+.mz-vcard__ctas {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mz-vcard__ctas a {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s;
+}
+
+.mz-vcard__ctas a:hover {
+  background: #fff;
+  color: #101010;
+}
+
+.mz-discover__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.mz-discover__controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+  background: #fff;
+  color: #101010;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.mz-discover__controls button:hover:not(:disabled) {
+  background: #101010;
+  color: #fff;
+}
+
+.mz-discover__controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.mz-discover__count {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #676565;
+}
+
+@media (max-width: 1024px) {
+  .mz-vcard {
+    flex-basis: 50%;
+  }
+
+  .mz-discover__tabs {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}

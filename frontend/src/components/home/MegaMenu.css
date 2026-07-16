@@ -1,0 +1,269 @@
+/* Flydown mega menus — live values (2026-07-16): Owners panel ~547px tall,
+   3×480px columns, section padding 42px 94px, row gap 18px; column h2 16px/700
+   ls1.6 #676565 uppercase; links 16px/400 #2b2b2b lh28. */
+
+.mz-menu {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.mz-menu--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mz-menu--drives {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mz-menu__col {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: 42px 94px;
+}
+
+.mz-menu__col + .mz-menu__col {
+  border-left: 1px solid #ececec;
+}
+
+.mz-menu__col h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #676565;
+}
+
+.mz-menu__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.mz-menu__links a {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+
+.mz-menu__links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.mz-menu__tout {
+  display: grid;
+  gap: 12px;
+}
+
+.mz-menu__tout img,
+.mz-menu__rail-tout img,
+.mz-menu__mymazda img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mz-menu__tout-body {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.mz-menu__tout-body p,
+.mz-menu__rail-tout p,
+.mz-menu__mymazda p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #101010;
+}
+
+.mz-menu__tout-sub {
+  font-size: 10px !important;
+  color: #7a7a7a !important;
+}
+
+.mz-menu__tout-body .mz-cta-text,
+.mz-menu__rail-tout .mz-cta-text {
+  font-size: 12px;
+  letter-spacing: 2.4px;
+}
+
+.mz-menu__mymazda-ctas {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ---------- Vehicles panel ---------- */
+.mz-menu--vehicles {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-height: 74vh;
+  overflow-y: auto;
+}
+
+.mz-menu__rail {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  padding: 42px 40px 42px 64px;
+  border-right: 1px solid #ececec;
+}
+
+.mz-menu__rail .mz-menu__links a {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.mz-menu__rail-tout {
+  display: grid;
+  gap: 8px;
+}
+
+.mz-menu__models {
+  padding: 32px 48px 42px;
+}
+
+.mz-menu__tabs {
+  display: flex;
+  gap: 28px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.mz-menu__tabs button {
+  padding: 0 0 6px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #676565;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.mz-menu__tabs button.is-active,
+.mz-menu__tabs button:hover {
+  color: #101010;
+  border-bottom-color: #101010;
+}
+
+.mz-menu__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mz-menu__model a {
+  display: grid;
+  gap: 2px;
+  text-decoration: none;
+  color: #101010;
+}
+
+/* sprite sheets are 480x1200 film strips (5 frames of 480x240) —
+   clip to the first frame */
+.mz-menu__model-frame {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.mz-menu__model-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mz-menu__model:hover .mz-menu__model-frame img {
+  transform: scale(1.04);
+}
+
+.mz-menu__model-year {
+  font-size: 11px;
+  color: #676565;
+}
+
+.mz-menu__model-name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mz-menu__model-trim {
+  font-size: 11px;
+  color: #676565;
+}
+
+.mz-menu__model-spec {
+  font-size: 11px;
+  color: #2b2b2b;
+}
+
+.mz-menu__model-spec sup {
+  font-size: 8px;
+}
+
+.mz-menu__model-ctas {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.mz-menu__model:hover .mz-menu__model-ctas {
+  opacity: 1;
+}
+
+.mz-menu__model-ctas a {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #676565;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.mz-menu__model-ctas a:hover {
+  color: #101010;
+}
+
+@media (max-width: 1180px) {
+  .mz-menu__col {
+    padding: 32px 40px;
+  }
+
+  .mz-menu__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mz-menu--vehicles {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .mz-menu__rail {
+    padding: 32px 24px;
+  }
+}

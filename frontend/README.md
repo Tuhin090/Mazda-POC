@@ -1,3 +1,34 @@
+# Mazda POC — Frontend
+
+## Homepage replica assets (`public/mazda/`)
+
+The landing page (`/`) is a component-by-component replica of the mazdausa.com
+homepage (content snapshot 2026-07-16, see `src/data/homeData.js`). Its media
+lives in `public/mazda/`, mirroring the live site's asset paths.
+
+- Images, fonts and icons are committed to the repo (~4 MB).
+- **Videos (`*.mp4`, ~29 MB) are gitignored.** After a fresh clone run:
+
+  ```bash
+  npm run fetch:assets
+  ```
+
+  This downloads everything in `scripts/mazda-asset-manifest.json` from
+  mazdausa.com (skips files that already exist) and writes the resolved
+  url → local-path map to `scripts/mazda-asset-resolved.json`.
+
+**Font licensing note:** "Mazda Type" and the Mazda standard icon font are
+proprietary corporate typefaces. They are self-hosted here solely for this
+Mazda-authorized POC — do not reuse or redistribute them outside this project.
+
+POC deltas vs the live homepage: the header has a Help button (opens the
+unauthorized Agentforce chat), the zip-code button is replaced by a user icon
+that routes to `/login`, and Owners → FAQs (plus the footer FAQ link) routes to
+the internal `/faq` landing page. All other links open the live mazdausa.com
+pages in a new tab.
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

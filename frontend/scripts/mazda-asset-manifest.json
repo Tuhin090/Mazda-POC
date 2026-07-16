@@ -1,0 +1,358 @@
+[
+ {
+  "url": "https://www.mazdausa.com/contentassets/6491a36225a34ffb994ef18403ce164b/2026-sse-desktop-video-hero-fo.jpg?w=1800",
+  "dest": "mazda/contentassets/6491a36225a34ffb994ef18403ce164b/2026-sse-desktop-video-hero-fo.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/owners/01_maintaining-your-mazda/maintaining-your-mazda-vehicle-find-a-service-dealer-near-you?w=767",
+  "dest": "mazda/siteassets/global-nav/owners/01_maintaining-your-mazda/maintaining-your-mazda-vehicle-find-a-service-dealer-near-you"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/owners/02_making-it-yours/nav-owners-02-desktop.jpg?w=767",
+  "dest": "mazda/siteassets/global-nav/owners/02_making-it-yours/nav-owners-02-desktop.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/owners/03_mymazda-login/mymazda-sign-in?w=767",
+  "dest": "mazda/siteassets/global-nav/owners/03_mymazda-login/mymazda-sign-in"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/shopping-tools/01_explore-tout/build-and-price-your-vehicle-2025-mazda-cx-90?w=767",
+  "dest": "mazda/siteassets/global-nav/shopping-tools/01_explore-tout/build-and-price-your-vehicle-2025-mazda-cx-90"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/shopping-tools/02_shop-tout/view-inventory-find-your-next-mazda?w=767",
+  "dest": "mazda/siteassets/global-nav/shopping-tools/02_shop-tout/view-inventory-find-your-next-mazda"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/shopping-tools/03_buy-tout/view-mazda-special-offers-and-incentives?w=767",
+  "dest": "mazda/siteassets/global-nav/shopping-tools/03_buy-tout/view-mazda-special-offers-and-incentives"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/vehicles/electrification/navbar-hero/large-image-desktop/mazda-ev-models-to-fit-your-life?w=1280",
+  "dest": "mazda/siteassets/global-nav/vehicles/electrification/navbar-hero/large-image-desktop/mazda-ev-models-to-fit-your-life"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/vehicles/electrification/navbar-hero/small-image-mobile/mazda-ev-models-to-fit-your-life?w=480",
+  "dest": "mazda/siteassets/global-nav/vehicles/electrification/navbar-hero/small-image-mobile/mazda-ev-models-to-fit-your-life"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/what-drives-us-mazda-difference/nav-touts/01_the-mazda-difference/the-mazda-difference-creating-exceptional-vehicles?w=767",
+  "dest": "mazda/siteassets/global-nav/what-drives-us-mazda-difference/nav-touts/01_the-mazda-difference/the-mazda-difference-creating-exceptional-vehicles"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/global-nav/what-drives-us-mazda-difference/nav-touts/02_mazda-central/mazda-central-explore-topics-that-matter-to-you?w=767",
+  "dest": "mazda/siteassets/global-nav/what-drives-us-mazda-difference/nav-touts/02_mazda-central/mazda-central-explore-topics-that-matter-to-you"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/Mazda-Named-Safest-New-Car-Brand-by-Consumer-Reports.jpg?w=1280",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/Mazda-Named-Safest-New-Car-Brand-by-Consumer-Reports.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/main-nav-shopping-desktop-2x-v2.jpg?w=767",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/main-nav-shopping-desktop-2x-v2.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/main-nav-shopping-desktop-v3.jpg?w=767",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/001_homepage-hero/2026/03_march/desktop/main-nav-shopping-desktop-v3.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/004_technology/a_5050-1/08_august/01_mobile/2026-cx-90-phev-owner-50-50-mobile-left.jpg?w=480",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/004_technology/a_5050-1/08_august/01_mobile/2026-cx-90-phev-owner-50-50-mobile-left.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/004_technology/a_5050-1/08_august/02_desktop/2026-cx-90-phev-owner-50-50-left.jpg?w=1280",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/004_technology/a_5050-1/08_august/02_desktop/2026-cx-90-phev-owner-50-50-left.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/006_incentives/b_5050/desktop/find-your-local-mazda-dealer?w=1280",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/006_incentives/b_5050/desktop/find-your-local-mazda-dealer"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/006_incentives/b_5050/mobile/find-your-local-mazda-dealer?w=480",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/006_incentives/b_5050/mobile/find-your-local-mazda-dealer"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/007_owners/a_3-col-tout/mazda-owners?w=480",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/007_owners/a_3-col-tout/mazda-owners"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/007_owners/a_3-col-tout/schedule-your-mazda-service?w=480",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/007_owners/a_3-col-tout/schedule-your-mazda-service"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/01_musa-homepage-redesign/09_safety/desktop/2026-homepage-desktop-consumer-reports-fwbi.jpg?w=1800",
+  "dest": "mazda/siteassets/images/01_musa-homepage-redesign/09_safety/desktop/2026-homepage-desktop-consumer-reports-fwbi.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/02_february/my26_cx-90_phev_special-offers_home-page_desktop.jpg?w=1920",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/02_february/my26_cx-90_phev_special-offers_home-page_desktop.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/02_february/my26_cx-90_phev_special-offers_home-page_mobile.jpg?w=480",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/02_february/my26_cx-90_phev_special-offers_home-page_mobile.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/04_april/my26-cx70-phev-incentives-carrousel-desktop.jpg?w=1920",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/04_april/my26-cx70-phev-incentives-carrousel-desktop.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/04_april/my26-cx70-phev-incentives-carrousel-mobile.jpg?w=480",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/04_april/my26-cx70-phev-incentives-carrousel-mobile.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/07_july/cx-70-special-offers-desktop.jpg?w=1920",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/07_july/cx-70-special-offers-desktop.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/02_musa-special-offers-hero-carousel/2026/07_july/cx-70-special-offers-mobile.jpg?w=480",
+  "dest": "mazda/siteassets/images/02_musa-special-offers-hero-carousel/2026/07_july/cx-70-special-offers-mobile.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/content-hub/articles/community/a-mazda-mx-5-owner-25-years-in-the-making/an-mx-5-owner-25-years-in-the-making_5-d.jpg?w=767",
+  "dest": "mazda/siteassets/images/content-hub/articles/community/a-mazda-mx-5-owner-25-years-in-the-making/an-mx-5-owner-25-years-in-the-making_5-d.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/content-hub/articles/community/mazda-and-national-geographics-photography-quest/mazda-and-national-geographic-partner-on-photography-quest_nat-geo-desktop-v2.jpg?w=767",
+  "dest": "mazda/siteassets/images/content-hub/articles/community/mazda-and-national-geographics-photography-quest/mazda-and-national-geographic-partner-on-photography-quest_nat-geo-desktop-v2.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/content-hub/articles/community/meet-the-man-behind-mazdas-heritage-collection/meet-man-in-charge-mazdas-heritage-collection_rnady-miller_rd-photos-7934_desktop.jpg?w=767",
+  "dest": "mazda/siteassets/images/content-hub/articles/community/meet-the-man-behind-mazdas-heritage-collection/meet-man-in-charge-mazdas-heritage-collection_rnady-miller_rd-photos-7934_desktop.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/images/content-hub/articles/community/miata-fanatic-gets-first-mx-5-miata-rf/miata-fanatic-gets-first-mx-5-miata-rf3-desktop-v2.jpg?w=767",
+  "dest": "mazda/siteassets/images/content-hub/articles/community/miata-fanatic-gets-first-mx-5-miata-rf/miata-fanatic-gets-first-mx-5-miata-rf3-desktop-v2.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-30/04_btv/009_model-discovery/video/mazda-cx-30-crossover-suv",
+  "dest": "mazda/siteassets/vehicles/2025/cx-30/04_btv/009_model-discovery/video/mazda-cx-30-crossover-suv"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-50-hybrid/04_btv/002_sprites/model-selector/hybrid-premium-plus/2025-cx50-hybrid-premium-plus-wind-chill-pearl-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2025/cx-50-hybrid/04_btv/002_sprites/model-selector/hybrid-premium-plus/2025-cx50-hybrid-premium-plus-wind-chill-pearl-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/002_sprites/model-selector/my25-cx90-inline-turbo-s-premium-plus-artisan-red-ms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/002_sprites/model-selector/my25-cx90-inline-turbo-s-premium-plus-artisan-red-ms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/009_model-discovery/image/mazda-cx-90-suv?w=1280",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/009_model-discovery/image/mazda-cx-90-suv"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/009_model-discovery/video/mazda-cx-90-suv",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/009_model-discovery/video/mazda-cx-90-suv"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/002_sprites/model-selector/my25-cx90-phev-premium-plus-rhodium-white-ms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/002_sprites/model-selector/my25-cx90-phev-premium-plus-rhodium-white-ms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/009_model-discovery/image/mazda-cx-90-phev-suv?w=1280",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/009_model-discovery/image/mazda-cx-90-phev-suv"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/009_model-discovery/video/mazda-cx-90-phev-suv",
+  "dest": "mazda/siteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/009_model-discovery/video/mazda-cx-90-phev-suv"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2025/mazda3-sedan/04_btv/002_sprites/model/my25-m3-sedan-turbo-premium-plus-polymental-gray-ms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2025/mazda3-sedan/04_btv/002_sprites/model/my25-m3-sedan-turbo-premium-plus-polymental-gray-ms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-30/04_btv/002_sprites/model-selector/trim---hero-color/my26-cx30-2-5-turbo-premium-plus-polymetal-gray-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/cx-30/04_btv/002_sprites/model-selector/trim---hero-color/my26-cx30-2-5-turbo-premium-plus-polymetal-gray-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-30/04_btv/009_model-discovery/images/my26-image-vehicle-card-cx-30.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-30/04_btv/009_model-discovery/images/my26-image-vehicle-card-cx-30.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/002_sprites/model-selector/trim---hero-color/my26-2-5-premiumplus-soulred-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/cx-5/04_btv/002_sprites/model-selector/trim---hero-color/my26-2-5-premiumplus-soulred-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/009_model-discovery/images/2026-cx-5-model-discovery.png?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-5/04_btv/009_model-discovery/images/2026-cx-5-model-discovery.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-5/04_btv/009_model-discovery/video/2026-cx-5-model-discovery.mp4",
+  "dest": "mazda/siteassets/vehicles/2026/cx-5/04_btv/009_model-discovery/video/2026-cx-5-model-discovery.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-50-hybrid/04_btv/009_model-discovery/images/2026-cx-50-hybrid-discovery-thumb.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-50-hybrid/04_btv/009_model-discovery/images/2026-cx-50-hybrid-discovery-thumb.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-50-hybrid/04_btv/009_model-discovery/video/2026-cx-50-hybrid-discovery-video.mp4",
+  "dest": "mazda/siteassets/vehicles/2026/cx-50-hybrid/04_btv/009_model-discovery/video/2026-cx-50-hybrid-discovery-video.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-50/04_btv/002_sprites/model-selector/new-12.18-premium-plus/my26-cx50-2-5-turbo-premiumplus-polymetalgray-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/cx-50/04_btv/002_sprites/model-selector/new-12.18-premium-plus/my26-cx50-2-5-turbo-premiumplus-polymetalgray-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-50/04_btv/009_model-discovery/images/2026-cx-50-discovery-thumb.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-50/04_btv/009_model-discovery/images/2026-cx-50-discovery-thumb.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-50/04_btv/009_model-discovery/video/2026-cx-50-discovery-video.mp4",
+  "dest": "mazda/siteassets/vehicles/2026/cx-50/04_btv/009_model-discovery/video/2026-cx-50-discovery-video.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-70-phev/04_btv/002_sprites/model-selector/phev-sc-plus---rhodium-white/my26-cx70-phev-sc-plus-rhodiumwhite-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/cx-70-phev/04_btv/002_sprites/model-selector/phev-sc-plus---rhodium-white/my26-cx70-phev-sc-plus-rhodiumwhite-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-70-phev/04_btv/009_model-discovery/images/my26-cx70-phev-homepage-vehicle-cards.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-70-phev/04_btv/009_model-discovery/images/my26-cx70-phev-homepage-vehicle-cards.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-70/04_btv/002_sprites/model-selector/turbo-3-premium---jetblack/my26-cx70-3-3-turbo-s-premium-plus-jetblack-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/cx-70/04_btv/002_sprites/model-selector/turbo-3-premium---jetblack/my26-cx70-3-3-turbo-s-premium-plus-jetblack-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-70/04_btv/009_model-discovery/images/my26-cx70-model-discovery.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/cx-70/04_btv/009_model-discovery/images/my26-cx70-model-discovery.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/cx-70/04_btv/009_model-discovery/video/video-vehicle-card-cx-70.mp4",
+  "dest": "mazda/siteassets/vehicles/2026/cx-70/04_btv/009_model-discovery/video/video-vehicle-card-cx-70.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mazda3-hatchback/04_btv/002_sprites/model-selector/2.5-s-turbo-premium-plus---soul-red-crystal/my25-m3hb-2-5-turbo-premium-plus-soulredcrystal-metallic-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/mazda3-hatchback/04_btv/002_sprites/model-selector/2.5-s-turbo-premium-plus---soul-red-crystal/my25-m3hb-2-5-turbo-premium-plus-soulredcrystal-metallic-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mazda3-hatchback/04_btv/009_model-discovery/image-carryover/mazda-3-hatchback?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/mazda3-hatchback/04_btv/009_model-discovery/image-carryover/mazda-3-hatchback"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mazda3-hatchback/04_btv/009_model-discovery/video-carryover/mazda-3-hatchback",
+  "dest": "mazda/siteassets/vehicles/2026/mazda3-hatchback/04_btv/009_model-discovery/video-carryover/mazda-3-hatchback"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mazda3-sedan/04_btv/010_special-offers-refresh/a_desktop/m3s-desktop.png?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/mazda3-sedan/04_btv/010_special-offers-refresh/a_desktop/m3s-desktop.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mazda3-sedan/04_btv/010_special-offers-refresh/a_desktop/video-vehicle-card-m3-sedan_cut.mp4",
+  "dest": "mazda/siteassets/vehicles/2026/mazda3-sedan/04_btv/010_special-offers-refresh/a_desktop/video-vehicle-card-m3-sedan_cut.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-rf/04_btv/002_sprites/model-selector/grand-touring---soul-red/2026-mx5-rf-gt-soulred-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-rf/04_btv/002_sprites/model-selector/grand-touring---soul-red/2026-mx5-rf-gt-soulred-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-rf/04_btv/010_model-discovery/image/2026-mazda-mx-5-miata-rf-convertible-car.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-rf/04_btv/010_model-discovery/image/2026-mazda-mx-5-miata-rf-convertible-car.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-rf/04_btv/010_model-discovery/video/2026-mazda-mx-5-miata-rf-convertible-car",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-rf/04_btv/010_model-discovery/video/2026-mazda-mx-5-miata-rf-convertible-car"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-st/01_vlp/000_hero/fwbihomepage/desktop/2026-mazda-mx-5-miata-convertible-roadster_d.jpg?w=1800",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-st/01_vlp/000_hero/fwbihomepage/desktop/2026-mazda-mx-5-miata-convertible-roadster_d.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-st/04_btv/002_sprites/model-selector/grand-touring---aero-gray/my26-mx-5-st-gt-aerogray-animatedms.png?w=460",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-st/04_btv/002_sprites/model-selector/grand-touring---aero-gray/my26-mx-5-st-gt-aerogray-animatedms.png"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-st/04_btv/009_model-discovery/image/2026-mazda-mx-5-miata-convertible-car.jpg?w=1280",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-st/04_btv/009_model-discovery/image/2026-mazda-mx-5-miata-convertible-car.jpg"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/2026/mx-5-st/04_btv/009_model-discovery/video/2026-mazda-mx-5-miata-convertible-car",
+  "dest": "mazda/siteassets/vehicles/2026/mx-5-st/04_btv/009_model-discovery/video/2026-mazda-mx-5-miata-convertible-car"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/build-and-price-your-mazda",
+  "dest": "mazda/siteassets/vehicles/shopping-icons/test/build-and-price-your-mazda"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/find-a-mazda-dealer",
+  "dest": "mazda/siteassets/vehicles/shopping-icons/test/find-a-mazda-dealer"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/mazda-special-offers",
+  "dest": "mazda/siteassets/vehicles/shopping-icons/test/mazda-special-offers"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/schedule-a-mazda-test-drive",
+  "dest": "mazda/siteassets/vehicles/shopping-icons/test/schedule-a-mazda-test-drive"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/video/2025-iihs-top-safety-pick-/00_homepage/Mazda-Vehicles-2026-IIHS-Top-Safety-Pick-Plus-Award.mp4",
+  "dest": "mazda/siteassets/video/2025-iihs-top-safety-pick-/00_homepage/Mazda-Vehicles-2026-IIHS-Top-Safety-Pick-Plus-Award.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/siteassets/video/more-to-move-you/2026-sse-desktop-video-hero.mp4",
+  "dest": "mazda/siteassets/video/more-to-move-you/2026-sse-desktop-video-hero.mp4"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-bold-italic.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-bold.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-bold.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-bold.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-bold.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-italic.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-italic.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-italic.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-italic.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-medium-italic.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-medium.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-medium.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-medium.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-medium.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-regular.woff",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-regular.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/mazda-type/mazda-type-regular.woff2",
+  "dest": "mazda/assets/theme/fonts/mazda-type/mazda-type-regular.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/theano-regular/theanooldstyle-regular-webfont.woff",
+  "dest": "mazda/assets/theme/fonts/theano-regular/theanooldstyle-regular-webfont.woff"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/fonts/theano-regular/theanooldstyle-regular-webfont.woff2",
+  "dest": "mazda/assets/theme/fonts/theano-regular/theanooldstyle-regular-webfont.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/icons/standard-icon-font/standard-icon-font.woff2?026e623a48be3f1fc7bd6344bac17c66",
+  "dest": "mazda/assets/theme/icons/standard-icon-font/standard-icon-font.woff2"
+ },
+ {
+  "url": "https://www.mazdausa.com/assets/theme/icons/standard-icon-font/standard-icon-font.woff?026e623a48be3f1fc7bd6344bac17c66",
+  "dest": "mazda/assets/theme/icons/standard-icon-font/standard-icon-font.woff"
+ }
+]

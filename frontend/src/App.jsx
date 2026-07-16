@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
 import Faq from "./pages/Faq";
 import FaqTopicPage from "./pages/FaqTopicPage";
 import FaqArticlePage from "./pages/FaqArticlePage";
@@ -47,7 +48,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Faq />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/faq/connected-services" element={<FaqTopicPage />} />
         <Route path="/faq/connected-services/article/:slug" element={<FaqArticlePage />} />
         <Route path="/login" element={<Login />} />

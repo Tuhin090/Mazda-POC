@@ -1,0 +1,63 @@
+/* Electrification + IIHS block — 50/50 media + copy card rows;
+   inner card h2 22px/500 lh32 uppercase (live capture 2026-07-16). */
+
+.mz-elec {
+  margin-top: 110px;
+}
+
+.mz-elec__head {
+  margin-bottom: 42px;
+}
+
+.mz-elec__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 56px;
+  margin-bottom: 72px;
+}
+
+.mz-elec__split img,
+.mz-elec__split video {
+  width: 100%;
+  height: auto;
+}
+
+/* IIHS block: full-width media, copy below (live layout) */
+.mz-elec__split--iihs {
+  grid-template-columns: 1fr;
+  gap: 26px;
+  margin-bottom: 0;
+}
+
+.mz-elec__split--iihs .mz-elec__card {
+  max-width: 780px;
+}
+
+.mz-elec__card h2,
+.mz-elec__card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.mz-elec__card p {
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #101010;
+}
+
+.mz-elec__ref a {
+  color: #101010;
+}
+
+@media (max-width: 1024px) {
+  .mz-elec__split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

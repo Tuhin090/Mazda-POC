@@ -1,0 +1,60 @@
+/* Safety section — live values (2026-07-16): container 1194px pad 0 12px;
+   feature card 437px overlapping image, "COMMITTED TO SAFETY" 21-22px. */
+
+.mz-safety {
+  margin-top: 96px;
+}
+
+.mz-safety__award {
+  width: 100%;
+  margin: 12px 0 48px;
+}
+
+.mz-safety__feature {
+  position: relative;
+}
+
+.mz-safety__feature > img {
+  width: 100%;
+}
+
+.mz-safety__card {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+  width: 437px;
+  padding: 32px 34px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.mz-safety__disclaimer {
+  margin: 0 0 10px;
+  font-size: 10px;
+  color: #7a7a7a;
+}
+
+.mz-safety__card h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+}
+
+.mz-safety__copy {
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #2b2b2b;
+}
+
+@media (max-width: 1024px) {
+  .mz-safety__card {
+    position: static;
+    width: auto;
+    margin-top: 16px;
+    box-shadow: none;
+  }
+}

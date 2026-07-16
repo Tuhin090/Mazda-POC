@@ -1,0 +1,61 @@
+/* Shopping icon band — live values (2026-07-16): cards 303px wide on
+   #f5f5f5, padding 36px 12px, margin 36px 24px; h3 14px/500 ls2.8 uppercase. */
+
+.mz-shoprow {
+  background: #fff;
+}
+
+.mz-shoprow ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mz-shoprow li {
+  width: 303px;
+  margin: 36px 24px;
+  background: #f5f5f5;
+}
+
+.mz-shoprow a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #101010;
+}
+
+.mz-shoprow img {
+  height: 48px;
+  width: auto;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mz-shoprow a:hover img {
+  transform: translateY(-4px);
+}
+
+.mz-shoprow h3 {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2.8px;
+  line-height: 18.2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .mz-shoprow ul {
+    flex-wrap: wrap;
+  }
+
+  .mz-shoprow li {
+    width: 40%;
+    margin: 8px 12px;
+  }
+}
