@@ -176,12 +176,14 @@ function OwnersMenu({ onNavigate }) {
         <img src={OWNERS_MYMAZDA.img} alt={OWNERS_MYMAZDA.alt} loading="lazy" />
         <p>{OWNERS_MYMAZDA.text}</p>
         <div className="mz-menu__mymazda-ctas">
-          <a className="mz-cta mz-cta--black" href={OWNERS_MYMAZDA.login[1]} target="_blank" rel="noreferrer">
+          {/* POC: LOGIN routes to the internal login page */}
+          <Link className="mz-cta mz-cta--black" to="/login" onClick={onNavigate}>
             {OWNERS_MYMAZDA.login[0]}
-          </a>
-          <a className="mz-cta-text" href={OWNERS_MYMAZDA.register[1]} target="_blank" rel="noreferrer">
+          </Link>
+          {/* POC: REGISTER is a visual placeholder — no action */}
+          <span className="mz-cta-text mz-cta-text--placeholder" aria-disabled="true">
             {OWNERS_MYMAZDA.register[0]}
-          </a>
+          </span>
         </div>
       </section>
     </div>

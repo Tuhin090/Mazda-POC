@@ -114,10 +114,15 @@ export function FaqSearchCard() {
  * footer + unauthorized chat) and inside the logged-in portal (Service.jsx, wrapped
  * in Layout). Returns a fragment — the wrapper element is the caller's responsibility.
  *
- * `internalConnectedServices`: when true (public landing), the Connected Services
- * card navigates to the internal topic page instead of the external FAQ site.
+ * `internalConnectedServices`: when true, the Connected Services card navigates
+ * to the internal topic page instead of the external FAQ site.
+ * `connectedServicesTo`: internal target for that card — the public route by
+ * default; Service.jsx passes the portal route so the logged-in chrome stays.
  */
-export default function FaqContent({ internalConnectedServices = false }) {
+export default function FaqContent({
+  internalConnectedServices = false,
+  connectedServicesTo = "/faq/connected-services",
+}) {
   return (
     <>
       <FaqSearchCard />
@@ -135,7 +140,7 @@ export default function FaqContent({ internalConnectedServices = false }) {
           {FEATURED_TOPICS.map((t) => (
             <li key={t.title}>
               {internalConnectedServices && t.title === "Connected Services" ? (
-                <Link className="faq-card" to="/faq/connected-services">
+                <Link className="faq-card" to={connectedServicesTo}>
                   <span className="faq-card-img" style={{ backgroundImage: `url(${t.img})` }} />
                   <span className="faq-card-title">{t.title}</span>
                 </Link>

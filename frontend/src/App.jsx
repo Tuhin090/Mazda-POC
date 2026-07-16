@@ -57,6 +57,8 @@ export default function App() {
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
         <Route path="/connected-services" element={<PrivateRoute><ConnectedServices /></PrivateRoute>} />
         <Route path="/service" element={<PrivateRoute><Service /></PrivateRoute>} />
+        <Route path="/service/connected-services" element={<PrivateRoute><FaqTopicPage portal /></PrivateRoute>} />
+        <Route path="/service/connected-services/article/:slug" element={<PrivateRoute><FaqArticlePage portal /></PrivateRoute>} />
         <Route path="/support" element={<PrivateRoute><Support /></PrivateRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
