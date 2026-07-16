@@ -1,5 +1,6 @@
-/* Hero replica — live values (2026-07-16): section 776px tall at 1440×900
-   (viewport minus ~124px), h1 35px/500 ls3.5 white centered near top,
+/* Hero replica — live values (2026-07-16): section 776px tall at 1440×900,
+   h1 35px/500 ls3.5 white centered near top, SEE OFFERS pinned bottom-center
+   of the video window, scroll-down chevron circle bottom-right,
    fade transition 1.2s cubic-bezier(.86,0,.07,1). */
 
 .mz-hero {
@@ -18,13 +19,14 @@
 }
 
 .mz-hero__overlay {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding-top: 90px;
+  justify-content: space-between;
+  padding: 90px 0 52px;
   text-align: center;
   animation: mz-hero-in 1.2s cubic-bezier(0.86, 0, 0.07, 1) both;
 }
@@ -42,7 +44,7 @@
 }
 
 .mz-hero__overlay h1 {
-  margin: 0 0 12px;
+  margin: 0;
   color: #fff;
   font-size: 35px;
   font-weight: 500;
@@ -51,10 +53,54 @@
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
 
+.mz-hero__cta {
+  min-width: 170px;
+}
+
+/* scroll-down chevron circle, bottom-right of the video (live site) */
+.mz-hero__scroll {
+  position: absolute;
+  right: 56px;
+  bottom: 44px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.mz-hero__scroll span {
+  width: 12px;
+  height: 12px;
+  border-right: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: border-color 0.3s;
+}
+
+.mz-hero__scroll:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.mz-hero__scroll:hover span {
+  border-color: #101010;
+}
+
 @media (max-width: 1024px) {
   .mz-hero__overlay h1 {
     font-size: 26px;
     letter-spacing: 2.6px;
     padding: 0 24px;
+  }
+
+  .mz-hero__scroll {
+    right: 24px;
+    bottom: 24px;
   }
 }

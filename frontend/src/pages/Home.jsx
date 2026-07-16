@@ -34,6 +34,11 @@ export default function Home() {
       </main>
       <HomeFooter />
 
+      {/* static feedback tab on the right edge (dummy per requirements) */}
+      <button type="button" className="mz-feedback-tab" aria-label="Feedback (static demo control)">
+        Feedback
+      </button>
+
       {/* static accessiBe-style widget (dummy per requirements) */}
       <button type="button" className="mz-accessibe" aria-label="Accessibility options (static demo control)">
         <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">

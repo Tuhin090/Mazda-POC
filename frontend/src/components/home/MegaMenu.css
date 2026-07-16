@@ -103,6 +103,19 @@
   gap: 24px;
 }
 
+/* REGISTER placeholder — looks like the text CTA but is inert */
+.mz-cta-text--placeholder {
+  cursor: default;
+}
+
+.mz-cta-text--placeholder:hover {
+  color: #676565;
+}
+
+.mz-cta-text--placeholder:hover::after {
+  transform: scaleX(0);
+}
+
 /* ---------- Vehicles panel ---------- */
 .mz-menu--vehicles {
   display: grid;

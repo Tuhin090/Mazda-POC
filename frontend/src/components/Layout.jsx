@@ -108,7 +108,8 @@ export default function Layout({ children }) {
 
   function activeNav() {
     for (const [label, path] of Object.entries(NAV_ROUTES)) {
-      if (location.pathname === path) return label;
+      // exact match or a subroute (e.g. /service/connected-services → SERVICE)
+      if (location.pathname === path || location.pathname.startsWith(path + "/")) return label;
     }
     return "DASHBOARD";
   }
